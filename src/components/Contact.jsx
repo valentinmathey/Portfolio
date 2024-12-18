@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
 
 // Importar las variables del .env
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -15,10 +16,10 @@ export const Contact = () => {
 
         emailjs
             .sendForm(
-                EMAILJS_SERVICE_ID, // Service ID
-                EMAILJS_TEMPLATE_ID, // Template ID
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
                 form.current,
-                EMAILJS_PUBLIC_KEY   // Public Key
+                EMAILJS_PUBLIC_KEY
             )
             .then(
                 () => {
@@ -47,15 +48,26 @@ export const Contact = () => {
     return (
         <section id="contacto" className="border-b border-neutral-900 pb-20">
             {/* Título */}
-            <h2 className="my-10 text-center text-4xl font-bold text-white">
+            <motion.h2
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -50 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="my-10 text-center text-4xl font-bold text-white"
+            >
                 Ponte en contacto
-            </h2>
+            </motion.h2>
 
             {/* Contenedor Principal */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-6 lg:px-16">
-                <form
+                {/* Formulario de Contacto */}
+                <motion.form
                     ref={form}
                     onSubmit={sendEmail}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    viewport={{ once: true }}
                     className="w-full lg:w-1/2 bg-neutral-900/80 p-6 rounded-lg shadow-lg"
                 >
                     <div className="mb-4">
@@ -88,13 +100,15 @@ export const Contact = () => {
                             className="w-full p-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500"
                         />
                     </div>
-                    <button
+                    <motion.button
                         type="submit"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
                         className="w-full py-3 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition duration-300"
                     >
                         Enviar Mensaje
-                    </button>
-                </form>
+                    </motion.button>
+                </motion.form>
             </div>
         </section>
     );
