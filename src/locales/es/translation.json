@@ -1,0 +1,15 @@
+{
+    "navbar": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "technologies": "Tecnologías",
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "location": "Mendoza, Argentina",
+      "rights": "© {{year}} Valentin Mathey. Todos los derechos reservados."
+    }
+  }
+  

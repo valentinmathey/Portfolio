@@ -1,0 +1,37 @@
+/* Estilos generales para Swiper */
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Paginación personalizada */
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #a855f7; /* Morado suave */
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #9333ea; /* Morado más fuerte */
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Navegación personalizada */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    color: #a855f7; /* Color inicial */
+    font-size: 2.5rem; /* Tamaño más grande de las flechas */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Hover para las flechas */
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+    color: #ec4899; /* Color rosado (pink-500) */
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+}
