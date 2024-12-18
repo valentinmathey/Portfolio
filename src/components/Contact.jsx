@@ -70,6 +70,13 @@ export const Contact = () => {
                     viewport={{ once: true }}
                     className="w-full lg:w-1/2 bg-neutral-900/80 p-6 rounded-lg shadow-lg"
                 >
+                    {/* Input Oculto */}
+                    <input
+                        type="hidden"
+                        name="from_name"
+                        value="Valentin Mathey"
+                    />
+                    
                     <div className="mb-4">
                         <label className="block text-gray-400 mb-2">Nombre</label>
                         <input
