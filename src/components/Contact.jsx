@@ -73,7 +73,7 @@ export const Contact = () => {
                     {/* Input Oculto */}
                     <input
                         type="hidden"
-                        name="from_name"
+                        name="to_name"
                         value="Valentin Mathey"
                     />
                     
@@ -81,7 +81,7 @@ export const Contact = () => {
                         <label className="block text-gray-400 mb-2">Nombre</label>
                         <input
                             type="text"
-                            name="to_name"
+                            name="from_name"
                             placeholder="Tu nombre"
                             required
                             className="w-full p-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500"
