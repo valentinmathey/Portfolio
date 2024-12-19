@@ -33,7 +33,7 @@ export const Hero = () => {
                         <a
                             href={FILES.CV}
                             download
-                            className="px-6 py-2 text-sm font-medium text-gray-200 border border-gray-500 rounded-full hover:bg-gray-800 hover:scale-105 transition-transform duration-300"
+                            className="px-6 py-2 text-sm font-medium text-gray-200 border border-gray-400 rounded-full hover:bg-gray-800 hover:scale-105 transition-transform duration-300"
                         >
                             Download CV
                         </a>
@@ -76,7 +76,7 @@ export const Hero = () => {
                     >
                         <motion.a
                             href={LINKS.GITHUB}
-                            className="flex items-center gap-2 px-4 py-2 border border-gray-500 rounded-full text-gray-300 hover:bg-gray-800 transition-transform duration-300"
+                            className="flex items-center gap-2 px-4 py-2 border border-gray-400 rounded-full text-gray-300 hover:bg-gray-800 transition-transform duration-300"
                         >
                             <FaGithub className="text-lg" /> GitHub
                         </motion.a>

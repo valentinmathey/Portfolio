@@ -33,7 +33,7 @@ const ScrollToTop = () => {
                 onClick={scrollToTop} // Acción al hacer clic
                 className={`fixed bottom-5 right-5 z-50 p-3 rounded-full shadow-lg transition-all flex items-center justify-center w-12 h-12 ${isClicked // Cambia el estilo del botón según el estado
                         ? "bg-purple-400 text-white" // Estilo cuando se hace clic
-                        : "bg-purple-800 text-white hover:bg-purple-500" // Estilo normal y hover
+                        : "bg-purple-600 text-white hover:bg-purple-500" // Estilo normal y hover
                     }`}
             >
                 {/* Icono de flecha hacia arriba */}

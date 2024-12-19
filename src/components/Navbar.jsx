@@ -31,16 +31,16 @@ export const Navbar = () => {
         closed: { x: "100%", transition: { duration: 0.5, ease: "easeInOut" } },
     };
 
-    const iconVariants = {
-        open: { rotate: 0, transition: { duration: 0.2, ease: "easeInOut" } },
-        closed: { rotate: 180, transition: { duration: 0.5, ease: "easeInOut" } },
-    };
-
     return (
         <nav className="mb-10 lg:mb-16 flex items-center justify-between mt-4 px-4 sm:px-8 lg:px-16">
-            {/* Logo */}
+            {/* Logo con etiqueta aria */}
             <motion.div className="flex flex-shrink-0 items-center">
-                <img className="w-16 sm:w-20" src={IMAGES.LOGO} alt="logo" />
+                <img
+                    className="w-16 sm:w-20"
+                    src={IMAGES.LOGO}
+                    alt="Logo de Valentin Mathey"
+                    aria-label="Logo de Valentin Mathey"
+                />
             </motion.div>
 
             {/* Menú Desktop */}
@@ -51,9 +51,10 @@ export const Navbar = () => {
                         <button
                             key={id}
                             onClick={() => scrollToSection(id)}
-                            className="relative text-lg xl:text-2xl text-gray-400 hover:text-white transition-all duration-300 
+                            className="relative text-lg xl:text-2xl text-gray-300 hover:text-white transition-all duration-300 
                             before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 
                             before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+                            aria-label={`Navegar a ${item}`}
                         >
                             {item.charAt(0).toUpperCase() + item.slice(1)}
                         </button>
@@ -63,10 +64,18 @@ export const Navbar = () => {
 
             {/* Social Icons Desktop */}
             <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xl xl:text-2xl">
-                <a href={LINKS.LINKEDIN} className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                    href={LINKS.LINKEDIN}
+                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    aria-label="Perfil de LinkedIn de Valentin Mathey"
+                >
                     <FaLinkedin />
                 </a>
-                <a href={LINKS.GITHUB} className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                    href={LINKS.GITHUB}
+                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    aria-label="Repositorio GitHub de Valentin Mathey"
+                >
                     <FaGithub />
                 </a>
             </div>
@@ -75,8 +84,6 @@ export const Navbar = () => {
             <motion.div
                 className="block lg:hidden text-3xl cursor-pointer z-50 relative"
                 onClick={() => setIsOpen(!isOpen)}
-                animate={isOpen ? "open" : "closed"}
-                variants={iconVariants}
             >
                 {isOpen ? <BiX /> : <BiMenu />}
             </motion.div>
@@ -94,7 +101,8 @@ export const Navbar = () => {
                         <button
                             key={id}
                             onClick={() => scrollToSection(id)}
-                            className="text-xl text-gray-400 hover:text-white transition-colors duration-300"
+                            className="text-xl text-gray-300 hover:text-white transition-colors duration-300"
+                            aria-label={`Navegar a ${item}`}
                         >
                             {item.charAt(0).toUpperCase() + item.slice(1)}
                         </button>
@@ -102,10 +110,18 @@ export const Navbar = () => {
                 })}
                 {/* Redes Sociales */}
                 <div className="flex gap-4 mt-4">
-                    <a href={LINKS.LINKEDIN} className="text-gray-400 hover:text-white text-3xl">
+                    <a
+                        href={LINKS.LINKEDIN}
+                        className="text-gray-300 hover:text-white text-3xl"
+                        aria-label="Perfil de LinkedIn de Valentin Mathey"
+                    >
                         <FaLinkedin />
                     </a>
-                    <a href={LINKS.GITHUB} className="text-gray-400 hover:text-white text-3xl">
+                    <a
+                        href={LINKS.GITHUB}
+                        className="text-gray-300 hover:text-white text-3xl"
+                        aria-label="Repositorio GitHub de Valentin Mathey"
+                    >
                         <FaGithub />
                     </a>
                 </div>

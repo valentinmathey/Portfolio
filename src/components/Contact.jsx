@@ -1,6 +1,6 @@
+import Swal from "sweetalert2";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 
 // Importar las variables del .env
@@ -28,7 +28,18 @@ export const Contact = () => {
                         title: "¡Mensaje enviado!",
                         text: "Tu mensaje se ha enviado con éxito.",
                         icon: "success",
+                        iconColor: "green", 
                         confirmButtonText: "OK",
+                        customClass: {
+                            popup: "bg-gray-900 text-gray-200 border-solid border-2 border-green-600 rounded-xl shadow-lg", 
+                            title: "text-green-600 font-bold", 
+                            htmlContainer: "text-gray-300",
+                            confirmButton: "w-full px-4 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg hover:bg-green-500", 
+                        },
+                        backdrop: "rgba(0,0,0,0.5)",
+                        buttonsStyling: false, // Para usar clases personalizadas
+                        timer: 3000,
+                        timerProgressBar: true,
                     });
                     form.current.reset();
                 },
@@ -38,7 +49,16 @@ export const Contact = () => {
                         title: "Error",
                         text: "Hubo un problema al enviar el mensaje.",
                         icon: "error",
+                        iconColor: "red",
                         confirmButtonText: "Intentar de nuevo",
+                        customClass: {
+                            popup: "bg-gray-900 text-gray-200 border-solid border-2 border-red-600 rounded-xl shadow-lg",
+                            title: "text-red-600 font-bold", 
+                            htmlContainer: "text-gray-300", 
+                            confirmButton: "w-full px-4 py-3 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500",
+                        },
+                        backdrop: "rgba(0,0,0,0.5)",
+                        buttonsStyling: false, // Para usar clases personalizadas
                     });
                     console.error("Error al enviar el mensaje:", error.text);
                 }
@@ -47,7 +67,6 @@ export const Contact = () => {
 
     return (
         <section id="contacto" className="border-b border-neutral-900 pb-20">
-            {/* Título */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
@@ -58,9 +77,7 @@ export const Contact = () => {
                 Ponte en contacto
             </motion.h2>
 
-            {/* Contenedor Principal */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-6 lg:px-16">
-                {/* Formulario de Contacto */}
                 <motion.form
                     ref={form}
                     onSubmit={sendEmail}
@@ -70,13 +87,11 @@ export const Contact = () => {
                     viewport={{ once: true }}
                     className="w-full lg:w-1/2 bg-neutral-900/80 p-6 rounded-lg shadow-lg"
                 >
-                    {/* Input Oculto */}
                     <input
                         type="hidden"
                         name="to_name"
                         value="Valentin Mathey"
                     />
-                    
                     <div className="mb-4">
                         <label className="block text-gray-400 mb-2">Nombre</label>
                         <input
@@ -109,9 +124,9 @@ export const Contact = () => {
                     </div>
                     <motion.button
                         type="submit"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
-                        className="w-full py-3 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition duration-300"
+                        whileHover={{ scale: 1.02 }}
+                        transition={{ duration: 0.1 }}
+                        className="w-full py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-500 transition duration-300"
                     >
                         Enviar Mensaje
                     </motion.button>
