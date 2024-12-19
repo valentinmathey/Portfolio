@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { IMAGES, LINKS, CONTACT, FILES, HERO_CONTENT } from "../constants";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const container = (delay) => ({
     hidden: { x: 100, opacity: 0 },
@@ -12,8 +13,11 @@ const container = (delay) => ({
 });
 
 export const Hero = () => {
+
+    const { t } = useTranslation(); // Hook para traducciones
+
     return (
-        <section id="inicio" className="border-b border-neutral-900 pb-12">
+        <section id={t("home.id")} className="border-b border-neutral-900 pb-12">
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 px-4 sm:px-8 md:px-16">
                 {/* Imagen con botón CV */}
                 <div className="flex flex-col items-center gap-4">

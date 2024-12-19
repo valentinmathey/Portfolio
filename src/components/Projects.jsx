@@ -3,14 +3,18 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { PROJECTS } from "../constants";
+import { IMAGES } from "../constants";
 import { motion } from "framer-motion";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import "./Projects.css";
 
 export const Projects = () => {
+
+    const { t } = useTranslation();
+
     return (
-        <section id="proyectos" className="border-b border-neutral-900 pb-16">
+        <section id={t("projects.id")} className="border-b border-neutral-900 pb-16">
             {/* Título */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +23,7 @@ export const Projects = () => {
                 viewport={{ once: true }}
                 className="my-10 text-center text-4xl font-bold"
             >
-                Proyectos
+                {t("projects.title")}
             </motion.h2>
 
             {/* Swiper de Proyectos */}
@@ -45,7 +49,7 @@ export const Projects = () => {
                     className="mySwiper"
                 >
 
-                    {PROJECTS.map((project, index) => (
+                    {t("projects.items", { returnObjects: true }).map((project, index) => (
                         <SwiperSlide key={index}>
                             <motion.div
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +65,7 @@ export const Projects = () => {
                                 {/* Imagen */}
                                 <div className="w-full mb-4">
                                     <img
-                                        src={project.image}
+                                        src={IMAGES.PROJECTS[project.imageIndex]}
                                         alt={project.title}
                                         className="w-full h-52 object-cover rounded-lg"
                                     />
@@ -97,7 +101,7 @@ export const Projects = () => {
                                         rel="noopener noreferrer"
                                         className="flex items-center gap-2 px-4 py-2 border border-purple-500 rounded-full hover:bg-purple-500 hover:text-white transition duration-300"
                                     >
-                                        <FaCode /> Código
+                                        <FaCode /> {t("projects.buttons.code")} {/* Botón dinámico */}
                                     </motion.a>
 
                                     <motion.a
@@ -106,7 +110,7 @@ export const Projects = () => {
                                         rel="noopener noreferrer"
                                         className="flex items-center gap-2 px-4 py-2 border border-purple-500 rounded-full hover:bg-purple-500 hover:text-white transition duration-300"
                                     >
-                                        <FaExternalLinkAlt /> Demo
+                                        <FaExternalLinkAlt /> {t("projects.buttons.demo")} {/* Botón dinámico */}
                                     </motion.a>
                                 </div>
                             </motion.div>

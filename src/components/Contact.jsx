@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 // Importar las variables del .env
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -10,6 +11,11 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export const Contact = () => {
     const form = useRef();
+
+    const { t, i18n } = useTranslation();
+
+    // ID dinámico basado en el idioma
+    const sectionId = t("contact.id");
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -25,8 +31,8 @@ export const Contact = () => {
                 () => {
                     // Popup de éxito
                     Swal.fire({
-                        title: "¡Mensaje enviado!",
-                        text: "Tu mensaje se ha enviado con éxito.",
+                        title: t("contact.success.title"),
+                        text: t("contact.success.text"),
                         icon: "success",
                         iconColor: "green", 
                         confirmButtonText: "OK",
@@ -46,8 +52,8 @@ export const Contact = () => {
                 (error) => {
                     // Popup de error
                     Swal.fire({
-                        title: "Error",
-                        text: "Hubo un problema al enviar el mensaje.",
+                        title: t("contact.error.title"),
+                        text: t("contact.error.text"),
                         icon: "error",
                         iconColor: "red",
                         confirmButtonText: "Intentar de nuevo",
@@ -66,7 +72,7 @@ export const Contact = () => {
     };
 
     return (
-        <section id="contacto" className="border-b border-neutral-900 pb-20">
+        <section id={sectionId} className="border-b border-neutral-900 pb-20">
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
@@ -74,7 +80,7 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 className="my-10 text-center text-4xl font-bold text-white"
             >
-                Ponte en contacto
+                {t("contact.title")}
             </motion.h2>
 
             <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-6 lg:px-16">
@@ -93,30 +99,30 @@ export const Contact = () => {
                         value="Valentin Mathey"
                     />
                     <div className="mb-4">
-                        <label className="block text-gray-400 mb-2">Nombre</label>
+                        <label className="block text-gray-400 mb-2">{t("contact.form.name.label")}</label>
                         <input
                             type="text"
                             name="from_name"
-                            placeholder="Tu nombre"
+                            placeholder={t("contact.form.name.placeholder")}
                             required
                             className="w-full p-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500"
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-gray-400 mb-2">Correo Electrónico</label>
+                        <label className="block text-gray-400 mb-2">{t("contact.form.email.label")}</label>
                         <input
                             type="email"
                             name="reply_to"
-                            placeholder="tucorreo@example.com"
+                            placeholder={t("contact.form.email.placeholder")}
                             required
                             className="w-full p-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500"
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-gray-400 mb-2">Mensaje</label>
+                        <label className="block text-gray-400 mb-2">{t("contact.form.message.label")}</label>
                         <textarea
                             name="message"
-                            placeholder="Escribe tu mensaje aquí"
+                            placeholder={t("contact.form.message.placeholder")}
                             rows="4"
                             required
                             className="w-full p-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500"
@@ -128,7 +134,7 @@ export const Contact = () => {
                         transition={{ duration: 0.1 }}
                         className="w-full py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-500 transition duration-300"
                     >
-                        Enviar Mensaje
+                        {t("contact.form.button")}
                     </motion.button>
                 </motion.form>
             </div>

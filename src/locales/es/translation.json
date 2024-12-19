@@ -1,15 +1,122 @@
 {
-    "navbar": {
-      "home": "Inicio",
-      "about": "Sobre Mí",
-      "technologies": "Tecnologías",
-      "experience": "Experiencia",
-      "projects": "Proyectos",
-      "contact": "Contacto"
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mi",
+    "technologies": "Tecnologias",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "id": "inicio"
+  },
+  "about": {
+    "id": "sobre-mi",
+    "title": "Sobre Mi",
+    "content": "<section><p>Soy estudiante de cuarto año de <strong class=\"highlight-purple\">Ingeniería en Sistemas</strong> en la <strong class=\"highlight-purple\">Universidad Tecnológica Nacional</strong>.</p><p class=\"mt-4\">Desde muy chico me apasionó la <strong class=\"highlight-pink\">programación</strong>. Comencé explorando <strong class=\"highlight-pink\">C#</strong> para crear mis propios videojuegos, lo cual me introdujo en el mundo del <strong class=\"highlight-purple\">desarrollo de software</strong>.</p><p class=\"mt-4\">Hoy en día, aplico <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong> y <strong class=\"highlight-purple\">Spring Boot</strong> para crear soluciones escalables y eficientes, siempre siguiendo <strong class=\"highlight-pink\">buenas prácticas</strong> y <strong class=\"highlight-pink\">patrones de diseño</strong>.</p></section>"
+  },
+  "technologies": {
+    "title": "Tecnologias"
+  },
+  "experience": {
+    "id": "experiencia",
+    "title": "Experiencia",
+    "items": [
+      {
+        "year": "2022 - 2023",
+        "role": "Líder Técnico",
+        "description": "Lideré un proyecto de desarrollo de software con metodologías ágiles, organizando la estructura del proyecto y revisando el código. Coordiné un equipo multifuncional (backend, frontend, scrum master, y agile delivery manager) para crear una web app que facilita la oferta, contratación y evaluación de servicios.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Thymeleaf",
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "id": "proyectos",
+    "title": "Proyectos",
+    "buttons": {
+      "code": "Código",
+      "demo": "Demo"
     },
-    "footer": {
-      "location": "Mendoza, Argentina",
-      "rights": "© {{year}} Valentin Mathey. Todos los derechos reservados."
+    "items": [
+      {
+        "title": "Heroes App",
+        "imageIndex": 0,
+        "description": "Explora héroes de DC y Marvel con sus alter egos, primeras apariciones y editoriales en una plataforma visual e interactiva.",
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux"],
+        "codeLink": "https://github.com/YourGitHubUsername/HeroesApp",
+        "demoLink": "https://heroes-app-dev.vercel.app/"
+      },
+      {
+        "title": "Weather App",
+        "imageIndex": 1,
+        "description": "Consulta el clima de cualquier ciudad con datos precisos y actualizados en tiempo real, en una interfaz moderna y sencilla.",
+        "technologies": ["HTML", "CSS", "JavaScript", "API"],
+        "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
+        "demoLink": "https://weather-app-dev-51.vercel.app/"
+      },
+      {
+        "title": "ToDo List",
+        "imageIndex": 2,
+        "description": "Organiza tus tareas diarias de manera eficiente con una aplicación intuitiva para agregar, eliminar y gestionar pendientes.",
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
+        "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
+        "demoLink": "https://to-do-dev-b.vercel.app/"
+      },
+      {
+        "title": "E-commerce",
+        "imageIndex": 3,
+        "description": "Carga, modifica y elimina productos fácilmente con una barra de búsqueda y categorías organizadas para explorar el catálogo.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "codeLink": "https://github.com/YourGitHubUsername/DesarrolloSoftware",
+        "demoLink": "https://ecommerce-restaurante-dev.vercel.app/"
+      },
+      {
+        "title": "Rick and Morty API",
+        "imageIndex": 4,
+        "description": "Descubre y filtra personajes de Rick and Morty con un diseño interactivo de cartas y paginación eficiente.",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "codeLink": "https://github.com/YourGitHubUsername/RickAndMorty-React-Exercises",
+        "demoLink": "https://rick-and-morty-react-exercises.vercel.app/"
+      }
+    ]
+  },
+  "contact": {
+    "id": "contacto",
+    "title": "Ponte en contacto",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "tucorreo@example.com"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Escribe tu mensaje aquí"
+      },
+      "button": "Enviar Mensaje"
+    },
+    "success": {
+      "title": "¡Mensaje enviado!",
+      "text": "Tu mensaje se ha enviado con éxito."
+    },
+    "error": {
+      "title": "Error",
+      "text": "Hubo un problema al enviar el mensaje."
     }
+  },
+  "footer": {
+    "location": "Mendoza, Argentina",
+    "rights": "© {{year}} Valentin Mathey. Todos los derechos reservados."
   }
-  
+}

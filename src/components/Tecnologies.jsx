@@ -2,6 +2,7 @@ import { BiLogoPostgresql, BiLogoHtml5 } from "react-icons/bi";
 import { FaCss3Alt, FaJava, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiSpringboot, SiC, SiMysql } from "react-icons/si";
 import { motion, useAnimation } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const iconVariants = (duration, index) => ({
     initial: { y: 0 },
@@ -18,6 +19,9 @@ const iconVariants = (duration, index) => ({
 });
 
 export const Tecnologies = () => {
+
+    const { t } = useTranslation(); // Hook para traducciones
+
     const icons = [
         { icon: SiJavascript, color: "text-yellow-500" },
         { icon: SiTypescript, color: "text-blue-500" },
@@ -37,8 +41,11 @@ export const Tecnologies = () => {
         controls.set({ rotate: 0 });
     };
 
+    // Generar el id dinámico basado en la traducción del título
+    const sectionId = t("technologies.title").toLowerCase().replace(/\s+/g, "-");
+
     return (
-        <section id="tecnologias" className="border-b border-neutral-800 pb-24">
+        <section id={sectionId} className="border-b border-neutral-800 pb-24">
             {/* Título */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +54,7 @@ export const Tecnologies = () => {
                 viewport={{ once: true }}
                 className="my-10 text-center text-4xl font-bold text-gray-200"
             >
-                Tecnologías
+                {t("technologies.title")}
             </motion.h2>
 
             {/* Íconos */}

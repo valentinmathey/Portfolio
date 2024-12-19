@@ -1,23 +1,26 @@
 import { motion } from "framer-motion";
-import { EXPERIENCES } from "../constants";
+import { useTranslation } from "react-i18next";
 
 export const Experience = () => {
+    
+    const { t } = useTranslation(); // Hook para traducciones
+
     return (
-        <section id="experiencia" className="border-b border-neutral-900 pb-16">
+        <section id={t("experience.id")} className="border-b border-neutral-900 pb-16">
             {/* Título */}
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
-                transition={{ duration: 1, ease: "easeOut"  }}
+                transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
                 className="my-10 text-center text-4xl font-bold"
             >
-                Experiencia
+                {t("experience.title")}
             </motion.h2>
 
             {/* Experiencias */}
             <div className="flex flex-col items-center gap-6 px-4">
-                {EXPERIENCES.map((exp, index) => (
+                {t("experience.items", { returnObjects: true }).map((exp, index) => (
                     <motion.div
                         key={index}
                         whileInView={{ opacity: 1, y: 0 }}

@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { IMAGES, LINKS } from "../constants";
-import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { IMAGES } from "../constants";
 import { BiX, BiMenu } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { t, i18n } = useTranslation();
 
     // Cierra el menú al redimensionar la pantalla
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 1024) {
                 setIsOpen(false);
             }
         };
@@ -31,6 +32,10 @@ export const Navbar = () => {
         closed: { x: "100%", transition: { duration: 0.5, ease: "easeInOut" } },
     };
 
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     return (
         <nav className="mb-10 lg:mb-16 flex items-center justify-between mt-4 px-4 sm:px-8 lg:px-16">
             {/* Logo con etiqueta aria */}
@@ -45,39 +50,46 @@ export const Navbar = () => {
 
             {/* Menú Desktop */}
             <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-                {["inicio", "sobre Mi", "Tecnologias", "experiencia", "proyectos", "contacto"].map((item) => {
-                    const id = item.toLowerCase().replace(/\s+/g, "-");
+                {["home", "about", "technologies", "experience", "projects", "contact"].map((item) => {
+                    const id = t(`navbar.${item}`).toLowerCase().replace(/\s+/g, "-");
+
                     return (
                         <button
                             key={id}
                             onClick={() => scrollToSection(id)}
-                            className="relative text-lg xl:text-2xl text-gray-300 hover:text-white transition-all duration-300 
-                            before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 
-                            before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-                            aria-label={`Navegar a ${item}`}
+                            className="relative text-lg xl:text-2xl text-gray-300 hover:text-white transition-all duration-300 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full"
+                            aria-label={`Navegar a ${t(`navbar.${item}`)}`}
                         >
-                            {item.charAt(0).toUpperCase() + item.slice(1)}
+                            {t(`navbar.${item}`)}
                         </button>
                     );
                 })}
             </div>
 
-            {/* Social Icons Desktop */}
-            <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xl xl:text-2xl">
-                <a
-                    href={LINKS.LINKEDIN}
+            {/* Botones de cambio de idioma */}
+            <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xl md:text-xl xl:text-2xl">
+                <button
+                    onClick={() => changeLanguage("es")}
                     className="text-gray-300 hover:text-white transition-colors duration-300"
-                    aria-label="Perfil de LinkedIn de Valentin Mathey"
+                    aria-label="Cambiar a español"
                 >
-                    <FaLinkedin />
-                </a>
-                <a
-                    href={LINKS.GITHUB}
+                    <img
+                        src={IMAGES.FLAGS.ARGENTINA}
+                        alt="Argentina Flag"
+                        className="md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8"
+                    />
+                </button>
+                <button
+                    onClick={() => changeLanguage("en")}
                     className="text-gray-300 hover:text-white transition-colors duration-300"
-                    aria-label="Repositorio GitHub de Valentin Mathey"
+                    aria-label="Cambiar a inglés"
                 >
-                    <FaGithub />
-                </a>
+                    <img
+                        src={IMAGES.FLAGS.USA}
+                        alt="USA Flag"
+                        className="md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8"
+                    />
+                </button>
             </div>
 
             {/* Menú Mobile */}
@@ -95,35 +107,45 @@ export const Navbar = () => {
                 animate={isOpen ? "open" : "closed"}
                 variants={menuVariants}
             >
-                {["inicio", "sobre Mi", "tecnologias", "experiencia", "proyectos", "contacto"].map((item) => {
-                    const id = item.toLowerCase().replace(/\s+/g, "-");
+                {["home", "about", "technologies", "experience", "projects", "contact"].map((item) => {
+                    const id = t(`navbar.${item}`).toLowerCase().replace(/\s+/g, "-");
+
                     return (
                         <button
                             key={id}
                             onClick={() => scrollToSection(id)}
                             className="text-xl text-gray-300 hover:text-white transition-colors duration-300"
-                            aria-label={`Navegar a ${item}`}
+                            aria-label={`Navegar a ${t(`navbar.${item}`)}`}
                         >
-                            {item.charAt(0).toUpperCase() + item.slice(1)}
+                            {t(`navbar.${item}`)}
                         </button>
                     );
                 })}
-                {/* Redes Sociales */}
-                <div className="flex gap-4 mt-4">
-                    <a
-                        href={LINKS.LINKEDIN}
-                        className="text-gray-300 hover:text-white text-3xl"
-                        aria-label="Perfil de LinkedIn de Valentin Mathey"
+
+                {/* Botones de idioma en Mobile */}
+                <div className="flex gap-5 mt-4">
+                    <button
+                        onClick={() => changeLanguage("es")}
+                        className="text-gray-300 hover:text-white transition-colors duration-300"
+                        aria-label="Cambiar a español"
                     >
-                        <FaLinkedin />
-                    </a>
-                    <a
-                        href={LINKS.GITHUB}
-                        className="text-gray-300 hover:text-white text-3xl"
-                        aria-label="Repositorio GitHub de Valentin Mathey"
+                        <img
+                            src={IMAGES.FLAGS.ARGENTINA}
+                            alt="Argentina Flag"
+                            className="w-7 h-7"
+                        />
+                    </button>
+                    <button
+                        onClick={() => changeLanguage("en")}
+                        className="text-gray-300 hover:text-white transition-colors duration-300"
+                        aria-label="Cambiar a inglés"
                     >
-                        <FaGithub />
-                    </a>
+                        <img
+                            src={IMAGES.FLAGS.USA}
+                            alt="USA Flag"
+                            className="w-7 h-7"
+                        />
+                    </button>
                 </div>
             </motion.div>
         </nav>
