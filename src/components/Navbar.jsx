@@ -45,6 +45,11 @@ export const Navbar = () => {
         closed: { x: "100%", transition: { duration: 0.5, ease: "easeInOut" } },
     };
 
+    const iconVariants = {
+        open: { rotate: 0, transition: { duration: 0.2, ease: "easeInOut" } },
+        closed: { rotate: 180, transition: { duration: 0.5, ease: "easeInOut" } },
+    };
+
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
@@ -109,6 +114,9 @@ export const Navbar = () => {
             <motion.div
                 className="block lg:hidden text-3xl cursor-pointer z-50 relative"
                 onClick={() => setIsOpen(!isOpen)}
+                initial={false}
+                animate={isOpen ? "open" : "closed"}
+                variants={iconVariants}
             >
                 {isOpen ? <BiX /> : <BiMenu />}
             </motion.div>
