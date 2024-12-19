@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IMAGES } from "../constants";
 import { BiX, BiMenu } from "react-icons/bi";
@@ -7,6 +7,19 @@ import { useTranslation } from "react-i18next";
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const { t, i18n } = useTranslation();
+    const menuRef = useRef(null); // Referencia para el menú desplegable
+
+    // Cierra el menú si haces clic fuera de él
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
 
     // Cierra el menú al redimensionar la pantalla
     useEffect(() => {
@@ -102,6 +115,7 @@ export const Navbar = () => {
 
             {/* Menú Desplegable Mobile */}
             <motion.div
+                ref={menuRef} // Asigna el ref aquí
                 className="fixed top-0 right-0 h-full w-2/3 bg-black text-white flex flex-col items-start gap-6 p-6 pt-12 z-40"
                 initial="closed"
                 animate={isOpen ? "open" : "closed"}
