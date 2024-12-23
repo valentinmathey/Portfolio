@@ -7,6 +7,7 @@ import { Navbar } from "./components/Navbar"
 import { Projects } from "./components/Projects"
 import ScrollToTop from "./components/ScrollToTop"
 import { Tecnologies } from "./components/Tecnologies"
+import WhatsappIcon from "./components/WhatsappIcon"
 
 function App() {
 
@@ -25,7 +26,10 @@ function App() {
         <Projects />
         <Contact />
       </div>
-      <ScrollToTop />
+      <div className="fixed bottom-5 right-5 flex flex-col items-center space-y-3 z-50">
+  <ScrollToTop />
+  <WhatsappIcon />
+</div>
       <Footer />
     </div>
   )

@@ -115,6 +115,9 @@
       "text": "Hubo un problema al enviar el mensaje."
     }
   },
+  "whatsappIcon": {
+    "whatsappMessage": "Hola, vengo desde tu portafolio web y quería ponerme en contacto contigo"
+  },
   "footer": {
     "location": "Mendoza, Argentina",
     "rights": "© {{year}} Valentin Mathey. Todos los derechos reservados."
