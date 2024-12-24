@@ -6,6 +6,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body.overflow-hidden {
+  overflow: hidden;
+}
+
 /* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: 8px; 
@@ -39,3 +43,5 @@
 .swal2-icon.swal2-success {
   color: #16a34a; /* Verde Tailwind */
 }
+
+

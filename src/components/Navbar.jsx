@@ -9,17 +9,16 @@ export const Navbar = () => {
     const { t, i18n } = useTranslation();
     const menuRef = useRef(null); // Referencia para el menú desplegable
 
-    // Cierra el menú si haces clic fuera de él
+    // Bloquear el scroll cuando el menú está abierto
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                setIsOpen(false);
-            }
-        };
+        if (isOpen) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+        return () => document.body.classList.remove("overflow-hidden");
+    }, [isOpen]);
 
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, []);
 
     // Cierra el menú al redimensionar la pantalla
     useEffect(() => {
@@ -40,6 +39,10 @@ export const Navbar = () => {
         setIsOpen(false);
     };
 
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     const menuVariants = {
         open: { x: 0, transition: { duration: 0.5, ease: "easeInOut" } },
         closed: { x: "100%", transition: { duration: 0.5, ease: "easeInOut" } },
@@ -50,9 +53,6 @@ export const Navbar = () => {
         closed: { rotate: 180, transition: { duration: 0.5, ease: "easeInOut" } },
     };
 
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-    };
 
     return (
         <nav className="mb-10 lg:mb-16 flex items-center justify-between mt-4 px-4 sm:px-8 lg:px-16">
@@ -88,7 +88,7 @@ export const Navbar = () => {
             <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xl md:text-xl xl:text-2xl">
                 <button
                     onClick={() => changeLanguage("es")}
-                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white hover:brightness-110 transition-colors duration-300"
                     aria-label="Cambiar a español"
                 >
                     <img
@@ -99,7 +99,7 @@ export const Navbar = () => {
                 </button>
                 <button
                     onClick={() => changeLanguage("en")}
-                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white hover:brightness-110 transition-colors duration-300"
                     aria-label="Cambiar a inglés"
                 >
                     <img
@@ -112,7 +112,7 @@ export const Navbar = () => {
 
             {/* Menú Mobile */}
             <motion.div
-                className="block lg:hidden text-3xl cursor-pointer z-50 relative"
+                className="top-4 right-4 text-4xl cursor-pointer z-[80] lg:hidden flex items-center"
                 onClick={() => setIsOpen(!isOpen)}
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
@@ -124,7 +124,7 @@ export const Navbar = () => {
             {/* Menú Desplegable Mobile */}
             <motion.div
                 ref={menuRef} // Asigna el ref aquí
-                className="fixed top-0 right-0 h-full w-2/3 bg-black text-white flex flex-col items-start gap-6 p-6 pt-12 z-40"
+                className="fixed top-0 left-0 h-full w-full bg-black bg-opacity-90 text-white flex flex-col items-start gap-6 p-6 pt-12 z-[70]"
                 initial="closed"
                 animate={isOpen ? "open" : "closed"}
                 variants={menuVariants}
@@ -136,7 +136,7 @@ export const Navbar = () => {
                         <button
                             key={id}
                             onClick={() => scrollToSection(id)}
-                            className="text-xl text-gray-300 hover:text-white transition-colors duration-300"
+                            className="text-2xl text-gray-300 hover:text-white transition-colors duration-300 w-full text-center mt-4"
                             aria-label={`Navegar a ${t(`navbar.${item}`)}`}
                         >
                             {t(`navbar.${item}`)}
@@ -145,7 +145,7 @@ export const Navbar = () => {
                 })}
 
                 {/* Botones de idioma en Mobile */}
-                <div className="flex gap-5 mt-4">
+                <div className="flex gap-10 mt-4 w-full justify-center items-center">
                     <button
                         onClick={() => changeLanguage("es")}
                         className="text-gray-300 hover:text-white transition-colors duration-300"
@@ -154,7 +154,7 @@ export const Navbar = () => {
                         <img
                             src={IMAGES.FLAGS.ARGENTINA}
                             alt="Argentina Flag"
-                            className="w-7 h-7"
+                            className="w-10 h-10"
                         />
                     </button>
                     <button
@@ -165,7 +165,7 @@ export const Navbar = () => {
                         <img
                             src={IMAGES.FLAGS.USA}
                             alt="USA Flag"
-                            className="w-7 h-7"
+                            className="w-10 h-10"
                         />
                     </button>
                 </div>
