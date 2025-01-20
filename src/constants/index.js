@@ -12,6 +12,7 @@ import logo from "../assets/images/profile/valentinMatheyLogo.png";
 // Importar imágenes de banderas
 import argentinaFlag from "../assets/images/flags/argentina.png";
 import usaFlag from "../assets/images/flags/usa.png";
+import brasilFlag from "../assets/images/flags/brasil.png";
 
 // Importar documentos
 import cv from "../assets/pdf/CV - Valentin Mathey.pdf";
@@ -24,6 +25,7 @@ export const IMAGES = {
   FLAGS: {
     ARGENTINA: argentinaFlag,
     USA: usaFlag,
+    BRASIL: brasilFlag
   },
 };
 

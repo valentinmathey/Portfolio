@@ -13,7 +13,7 @@
   "about": {
     "id": "about-me",
     "title": "About Me",
-    "content": "<section><p>I am a fourth-year student of <strong class=\"highlight-purple\">Systems Engineering</strong> at the <strong class=\"highlight-purple\">National Technological University</strong>.</p><p class=\"mt-4\">From a very young age, I was passionate about <strong class=\"highlight-pink\">programming</strong>. I started exploring <strong class=\"highlight-pink\">C#</strong> to create my own video games, which introduced me to the world of <strong class=\"highlight-purple\">software development</strong>.</p><p class=\"mt-4\">Today, I apply <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong>, and <strong class=\"highlight-purple\">Spring Boot</strong> to create scalable and efficient solutions, always following <strong class=\"highlight-pink\">best practices</strong> and <strong class=\"highlight-pink\">design patterns</strong>.</p></section>"
+    "content": "<section><p>I am a fourth-year student of <strong class=\"highlight-purple\">Systems Engineering</strong> at the <strong class=\"highlight-purple\">National Technological University</strong>.</p><p class=\"mt-4\">From a young age, I was passionate about <strong class=\"highlight-pink\">programming</strong>. I started exploring <strong class=\"highlight-pink\">C#</strong> to create my own video games, which introduced me to the world of <strong class=\"highlight-purple\">software development</strong>.</p><p class=\"mt-4\">Nowadays, I apply <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong>, and <strong class=\"highlight-purple\">Spring Boot</strong> to create scalable and efficient solutions, always following <strong class=\"highlight-pink\">best practices</strong> and <strong class=\"highlight-pink\">design patterns</strong>.</p></section>"
   },
   "technologies": {
     "title": "Technologies"
@@ -25,7 +25,7 @@
       {
         "year": "2022 - 2023",
         "role": "Technical Lead",
-        "description": "I led a software development project using agile methodologies, organizing the project structure and performing code reviews. I coordinated a cross-functional team (backend, frontend, scrum master, and agile delivery manager) to create a web app that facilitates the offering, hiring, and evaluation of services.",
+        "description": "Led a software development project using agile methodologies, organizing the project structure and reviewing the code. Coordinated a cross-functional team (backend, frontend, scrum master, and agile delivery manager) to create a web app that facilitates service offerings, hiring, and evaluations.",
         "technologies": [
           "Java",
           "Spring Boot",
@@ -57,7 +57,7 @@
       {
         "title": "Weather App",
         "imageIndex": 1,
-        "description": "Check the weather of any city with accurate and real-time data in a modern and simple interface.",
+        "description": "Check the weather for any city with accurate and up-to-date data in a modern and user-friendly interface.",
         "technologies": ["HTML", "CSS", "JavaScript", "API"],
         "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
         "demoLink": "https://weather-app-dev-51.vercel.app/"
@@ -65,7 +65,7 @@
       {
         "title": "ToDo List",
         "imageIndex": 2,
-        "description": "Organize your daily tasks efficiently with an intuitive application for adding, deleting, and managing to-dos.",
+        "description": "Organize your daily tasks efficiently with an intuitive app to add, delete, and manage to-dos.",
         "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
         "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
         "demoLink": "https://to-do-dev-b.vercel.app/"
@@ -73,7 +73,7 @@
       {
         "title": "E-commerce",
         "imageIndex": 3,
-        "description": "Upload, edit, and delete products easily with a search bar and organized categories to explore the catalog.",
+        "description": "Easily add, edit, and delete products with a search bar and organized categories to explore the catalog.",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "codeLink": "https://github.com/YourGitHubUsername/DesarrolloSoftware",
         "demoLink": "https://ecommerce-restaurante-dev.vercel.app/"
@@ -90,7 +90,7 @@
   },
   "contact": {
     "id": "contact",
-    "title": "Get in touch",
+    "title": "Get in Touch",
     "form": {
       "name": {
         "label": "Name",
@@ -98,7 +98,7 @@
       },
       "email": {
         "label": "Email",
-        "placeholder": "youremail@example.com"
+        "placeholder": "your-email@example.com"
       },
       "message": {
         "label": "Message",
@@ -108,15 +108,15 @@
     },
     "success": {
       "title": "Message Sent!",
-      "text": "Your message has been successfully sent."
+      "text": "Your message has been sent successfully."
     },
     "error": {
       "title": "Error",
-      "text": "There was a problem sending the message."
+      "text": "There was a problem sending your message."
     }
   },
   "whatsappIcon": {
-    "whatsappMessage": "Hello, I'm visiting from your portfolio website and wanted to get in touch with you"
+    "whatsappMessage": "Hello, I came from your web portfolio and wanted to get in touch with you"
   },
   "footer": {
     "location": "Mendoza, Argentina",

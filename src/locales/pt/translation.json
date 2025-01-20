@@ -1,0 +1,152 @@
+{
+    "navbar": {
+        "home": "Início",
+        "about": "Sobre Mim",
+        "technologies": "Tecnologias",
+        "experience": "Experiência",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "home": {
+        "id": "inicio"
+    },
+    "about": {
+        "id": "sobre-mim",
+        "title": "Sobre Mim",
+        "content": "<section><p>Sou estudante do quarto ano de <strong class=\"highlight-purple\">Engenharia de Sistemas</strong> na <strong class=\"highlight-purple\">Universidade Tecnológica Nacional</strong>.</p><p class=\"mt-4\">Desde muito jovem, me apaixonei pela <strong class=\"highlight-pink\">programação</strong>. Comecei explorando <strong class=\"highlight-pink\">C#</strong> para criar meus próprios videogames, o que me introduziu ao mundo do <strong class=\"highlight-purple\">desenvolvimento de software</strong>.</p><p class=\"mt-4\">Hoje em dia, aplico <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong> e <strong class=\"highlight-purple\">Spring Boot</strong> para criar soluções escaláveis e eficientes, sempre seguindo <strong class=\"highlight-pink\">boas práticas</strong> e <strong class=\"highlight-pink\">padrões de design</strong>.</p></section>"
+    },
+    "technologies": {
+        "title": "Tecnologias"
+    },
+    "experience": {
+        "id": "experiencia",
+        "title": "Experiência",
+        "items": [
+            {
+                "year": "2022 - 2023",
+                "role": "Líder Técnico",
+                "description": "Liderei um projeto de desenvolvimento de software com metodologias ágeis, organizando a estrutura do projeto e revisando o código. Coordenei uma equipe multifuncional (backend, frontend, scrum master e agile delivery manager) para criar uma aplicação web que facilita a oferta, contratação e avaliação de serviços.",
+                "technologies": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL",
+                    "Thymeleaf",
+                    "JavaScript",
+                    "HTML",
+                    "CSS"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "id": "projetos",
+        "title": "Projetos",
+        "buttons": {
+            "code": "Código",
+            "demo": "Demo"
+        },
+        "items": [
+            {
+                "title": "Heroes App",
+                "imageIndex": 0,
+                "description": "Explore heróis da DC e Marvel com seus alter egos, primeiras aparições e editoras em uma plataforma visual e interativa.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "Redux"
+                ],
+                "codeLink": "https://github.com/YourGitHubUsername/HeroesApp",
+                "demoLink": "https://heroes-app-dev.vercel.app/"
+            },
+            {
+                "title": "Weather App",
+                "imageIndex": 1,
+                "description": "Consulte o clima de qualquer cidade com dados precisos e atualizados em tempo real, em uma interface moderna e simples.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "API"
+                ],
+                "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
+                "demoLink": "https://weather-app-dev-51.vercel.app/"
+            },
+            {
+                "title": "ToDo List",
+                "imageIndex": 2,
+                "description": "Organize suas tarefas diárias de maneira eficiente com um aplicativo intuitivo para adicionar, excluir e gerenciar pendências.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "React"
+                ],
+                "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
+                "demoLink": "https://to-do-dev-b.vercel.app/"
+            },
+            {
+                "title": "E-commerce",
+                "imageIndex": 3,
+                "description": "Adicione, modifique e exclua produtos facilmente com uma barra de pesquisa e categorias organizadas para explorar o catálogo.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "codeLink": "https://github.com/YourGitHubUsername/DesarrolloSoftware",
+                "demoLink": "https://ecommerce-restaurante-dev.vercel.app/"
+            },
+            {
+                "title": "Rick and Morty API",
+                "imageIndex": 4,
+                "description": "Descubra e filtre personagens de Rick and Morty com um design interativo de cartas e paginação eficiente.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React"
+                ],
+                "codeLink": "https://github.com/YourGitHubUsername/RickAndMorty-React-Exercises",
+                "demoLink": "https://rick-and-morty-react-exercises.vercel.app/"
+            }
+        ]
+    },
+    "contact": {
+        "id": "contato",
+        "title": "Entre em Contato",
+        "form": {
+            "name": {
+                "label": "Nome",
+                "placeholder": "Seu nome"
+            },
+            "email": {
+                "label": "E-mail",
+                "placeholder": "seuemail@exemplo.com"
+            },
+            "message": {
+                "label": "Mensagem",
+                "placeholder": "Escreva sua mensagem aqui"
+            },
+            "button": "Enviar Mensagem"
+        },
+        "success": {
+            "title": "Mensagem Enviada!",
+            "text": "Sua mensagem foi enviada com sucesso."
+        },
+        "error": {
+            "title": "Erro",
+            "text": "Houve um problema ao enviar a mensagem."
+        }
+    },
+    "whatsappIcon": {
+        "whatsappMessage": "Olá, vim do seu portfólio web e gostaria de entrar em contato com você"
+    },
+    "footer": {
+        "location": "Mendoza, Argentina",
+        "rights": "© {{year}} Valentin Mathey. Todos os direitos reservados."
+    }
+}

@@ -108,6 +108,17 @@ export const Navbar = () => {
                         className="md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8"
                     />
                 </button>
+                <button
+                    onClick={() => changeLanguage("pt")}
+                    className="text-gray-300 hover:text-white hover:brightness-110 transition-colors duration-300"
+                    aria-label="Cambiar a portugués"
+                >
+                    <img
+                        src={IMAGES.FLAGS.BRASIL}
+                        alt="Brazil Flag"
+                        className="md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8"
+                    />
+                </button>
             </div>
 
             {/* Menú Mobile */}
@@ -165,6 +176,17 @@ export const Navbar = () => {
                         <img
                             src={IMAGES.FLAGS.USA}
                             alt="USA Flag"
+                            className="w-10 h-10"
+                        />
+                    </button>
+                    <button
+                        onClick={() => changeLanguage("pt")}
+                        className="text-gray-300 hover:text-white transition-colors duration-300"
+                        aria-label="Cambiar a portugués"
+                    >
+                        <img
+                            src={IMAGES.FLAGS.BRASIL}
+                            alt="Brazil Flag"
                             className="w-10 h-10"
                         />
                     </button>
