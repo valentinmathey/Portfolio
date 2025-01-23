@@ -55,20 +55,20 @@
         "demoLink": "https://heroes-app-dev.vercel.app/"
       },
       {
-        "title": "Weather App",
+        "title": "BugsLess Design",
         "imageIndex": 1,
-        "description": "Consulta el clima de cualquier ciudad con datos precisos y actualizados en tiempo real, en una interfaz moderna y sencilla.",
-        "technologies": ["HTML", "CSS", "JavaScript", "API"],
-        "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
-        "demoLink": "https://weather-app-dev-51.vercel.app/"
+        "description": "Emprendimiento especializado en landing pages, e-commerce, webs y bots personalizados para tu negocio.",
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Tailwind", "Framer Motion", "Swiper"],
+        "codeLink": "https://bugs-less-design.vercel.app/",
+        "demoLink": "https://bugs-less-design.vercel.app/"
       },
       {
-        "title": "ToDo List",
+        "title": "Mi Marido Te Lo Hace",
         "imageIndex": 2,
-        "description": "Organiza tus tareas diarias de manera eficiente con una aplicación intuitiva para agregar, eliminar y gestionar pendientes.",
-        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
-        "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
-        "demoLink": "https://to-do-dev-b.vercel.app/"
+        "description": "Plataforma para barrios cerrados que conecta usuarios con proveedores calificados, permitiendo buscar, contactar y calificar servicios fácilmente.",
+        "technologies": ["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript", "Thymeleaf", "Bootstrap"],
+        "codeLink": "https://github.com/valentinmathey/MiMaridoTeLoHace",
+        "demoLink": "https://github.com/valentinmathey/MiMaridoTeLoHace"
       },
       {
         "title": "E-commerce",
@@ -85,6 +85,30 @@
         "technologies": ["HTML", "CSS", "JavaScript", "React"],
         "codeLink": "https://github.com/YourGitHubUsername/RickAndMorty-React-Exercises",
         "demoLink": "https://rick-and-morty-react-exercises.vercel.app/"
+      },
+      {
+        "title": "Parallel QuickSort",
+        "imageIndex": 5,
+        "description": "Implementación de QuickSort paralelo en C con MPI y Criba de Eratóstenes, optimizando el ordenamiento y análisis de grandes volúmenes de datos.",
+        "technologies": ["C", "MPI"],
+        "codeLink": "https://github.com/valentinmathey/ParallelQuickSort",
+        "demoLink": "https://github.com/valentinmathey/ParallelQuickSort"
+      },
+      {
+        "title": "Weather App",
+        "imageIndex": 6,
+        "description": "Consulta el clima de cualquier ciudad con datos precisos y actualizados en tiempo real, en una interfaz moderna y sencilla.",
+        "technologies": ["HTML", "CSS", "JavaScript", "API"],
+        "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
+        "demoLink": "https://weather-app-dev-51.vercel.app/"
+      },
+      {
+        "title": "ToDo List",
+        "imageIndex": 7,
+        "description": "Organiza tus tareas diarias de manera eficiente con una aplicación intuitiva para agregar, eliminar y gestionar pendientes.",
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
+        "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
+        "demoLink": "https://to-do-dev-b.vercel.app/"
       }
     ]
   },
@@ -120,6 +144,6 @@
   },
   "footer": {
     "location": "Mendoza, Argentina",
-    "rights": "© {{year}} Valentin Mathey. Todos los derechos reservados."
+    "rights": "© {{year}} Valentin Mathey."
   }
 }

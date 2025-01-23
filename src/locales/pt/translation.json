@@ -49,7 +49,7 @@
             {
                 "title": "Heroes App",
                 "imageIndex": 0,
-                "description": "Explore heróis da DC e Marvel com seus alter egos, primeiras aparições e editoras em uma plataforma visual e interativa.",
+                "description": "Explore heróis da DC e Marvel, incluindo seus alter egos, primeiras aparições e editoras, em uma plataforma visual e interativa.",
                 "technologies": [
                     "HTML",
                     "CSS",
@@ -62,36 +62,43 @@
                 "demoLink": "https://heroes-app-dev.vercel.app/"
             },
             {
-                "title": "Weather App",
+                "title": "BugsLess Design",
                 "imageIndex": 1,
-                "description": "Consulte o clima de qualquer cidade com dados precisos e atualizados em tempo real, em uma interface moderna e simples.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "API"
-                ],
-                "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
-                "demoLink": "https://weather-app-dev-51.vercel.app/"
-            },
-            {
-                "title": "ToDo List",
-                "imageIndex": 2,
-                "description": "Organize suas tarefas diárias de maneira eficiente com um aplicativo intuitivo para adicionar, excluir e gerenciar pendências.",
+                "description": "Startup especializada em landing pages, e-commerce, sites e bots personalizados para atender às necessidades do seu negócio.",
                 "technologies": [
                     "HTML",
                     "CSS",
                     "JavaScript",
                     "TypeScript",
-                    "React"
+                    "React",
+                    "Tailwind",
+                    "Framer Motion",
+                    "Swiper"
                 ],
-                "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
-                "demoLink": "https://to-do-dev-b.vercel.app/"
+                "codeLink": "https://bugs-less-design.vercel.app/",
+                "demoLink": "https://bugs-less-design.vercel.app/"
+            },
+            {
+                "title": "Mi Marido Te Lo Hace",
+                "imageIndex": 2,
+                "description": "Plataforma para condomínios fechados que conecta usuários a prestadores de serviços qualificados, permitindo buscar, contatar e avaliar serviços com facilidade.",
+                "technologies": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL",
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Thymeleaf",
+                    "Bootstrap"
+                ],
+                "codeLink": "https://github.com/valentinmathey/MiMaridoTeLoHace",
+                "demoLink": "https://github.com/valentinmathey/MiMaridoTeLoHace"
             },
             {
                 "title": "E-commerce",
                 "imageIndex": 3,
-                "description": "Adicione, modifique e exclua produtos facilmente com uma barra de pesquisa e categorias organizadas para explorar o catálogo.",
+                "description": "Adicione, edite e exclua produtos facilmente com uma barra de busca e categorias organizadas para explorar o catálogo.",
                 "technologies": [
                     "HTML",
                     "CSS",
@@ -112,6 +119,44 @@
                 ],
                 "codeLink": "https://github.com/YourGitHubUsername/RickAndMorty-React-Exercises",
                 "demoLink": "https://rick-and-morty-react-exercises.vercel.app/"
+            },
+            {
+                "title": "Parallel QuickSort",
+                "imageIndex": 5,
+                "description": "Implementação paralela do QuickSort em C com MPI e Crivo de Eratóstenes, otimizando a ordenação e análise de grandes conjuntos de dados.",
+                "technologies": [
+                    "C",
+                    "MPI"
+                ],
+                "codeLink": "https://github.com/valentinmathey/ParallelQuickSort",
+                "demoLink": "https://github.com/valentinmathey/ParallelQuickSort"
+            },
+            {
+                "title": "Weather App",
+                "imageIndex": 6,
+                "description": "Consulte o clima de qualquer cidade com dados precisos e atualizados em tempo real em uma interface moderna e simples.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "API"
+                ],
+                "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
+                "demoLink": "https://weather-app-dev-51.vercel.app/"
+            },
+            {
+                "title": "ToDo List",
+                "imageIndex": 7,
+                "description": "Organize suas tarefas diárias de forma eficiente com um app intuitivo para adicionar, excluir e gerenciar pendências.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "React"
+                ],
+                "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
+                "demoLink": "https://to-do-dev-b.vercel.app/"
             }
         ]
     },
@@ -147,6 +192,6 @@
     },
     "footer": {
         "location": "Mendoza, Argentina",
-        "rights": "© {{year}} Valentin Mathey. Todos os direitos reservados."
+        "rights": "© {{year}} Valentin Mathey."
     }
 }
