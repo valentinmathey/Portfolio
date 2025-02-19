@@ -16,7 +16,10 @@
         "content": "<section><p>Sou estudante do quarto ano de <strong class=\"highlight-purple\">Engenharia de Sistemas</strong> na <strong class=\"highlight-purple\">Universidade Tecnológica Nacional</strong>.</p><p class=\"mt-4\">Desde muito jovem, me apaixonei pela <strong class=\"highlight-pink\">programação</strong>. Comecei explorando <strong class=\"highlight-pink\">C#</strong> para criar meus próprios videogames, o que me introduziu ao mundo do <strong class=\"highlight-purple\">desenvolvimento de software</strong>.</p><p class=\"mt-4\">Hoje em dia, aplico <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong> e <strong class=\"highlight-purple\">Spring Boot</strong> para criar soluções escaláveis e eficientes, sempre seguindo <strong class=\"highlight-pink\">boas práticas</strong> e <strong class=\"highlight-pink\">padrões de design</strong>.</p></section>"
     },
     "technologies": {
-        "title": "Tecnologias"
+        "title": "Tecnologias",
+        "using": "Em uso",
+        "tapToRotate": "Toque para girar",
+        "learningShort": "Em aprendizado"
     },
     "experience": {
         "id": "experiencia",
