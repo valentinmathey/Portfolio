@@ -18,7 +18,7 @@
   "technologies": {
     "title": "Technologies",
     "using": "In Use",
-    "tapToRotate": "Tap to rotate",
+    "tapToRotate": "Tap the icon to rotate",
     "learningShort": "In Learning"
   },
   "experience": {
@@ -26,9 +26,24 @@
     "title": "Experience",
     "items": [
       {
+        "year": "2024 - Present",
+        "role": "Web Developer",
+        "description": "Developed multiple websites as part of a four-person team, with a strong focus on user experience and performance. Built fully responsive interfaces optimized for mobile devices, applying best development practices, accessibility standards, and modern web technologies. Implemented SEO strategies and modular, scalable design while prioritizing clean, maintainable code. Integrated external libraries for interactive maps, carousel sliders, and motion effects to enhance visual engagement and interactivity.",
+        "technologies": [
+          "NextJS",
+          "React",
+          "JavaScript",
+          "TypeScript",
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "MySQL"
+        ]
+      },      
+      {
         "year": "2022 - 2023",
         "role": "Technical Lead",
-        "description": "Led a software development project using agile methodologies, organizing the project structure and reviewing the code. Coordinated a cross-functional team (backend, frontend, scrum master, and agile delivery manager) to create a web app that facilitates service offerings, hiring, and evaluations.",
+        "description": "Led a software development project using agile methodologies, structuring the system architecture and conducting code reviews. Coordinated a multidisciplinary team (backend, frontend, Scrum Master, and Agile Delivery Manager) to build a web application that enables efficient and scalable management of service offerings, hiring, and evaluation.",
         "technologies": [
           "Java",
           "Spring Boot",
@@ -38,7 +53,7 @@
           "HTML",
           "CSS"
         ]
-      }
+      }      
     ]
   },
   "projects": {
@@ -98,6 +113,14 @@
         "codeLink": "https://github.com/valentinmathey/MiMaridoTeLoHace",
         "demoLink": "https://github.com/valentinmathey/MiMaridoTeLoHace"
       },
+      {
+        "title": "CRUD - NextJS",
+        "imageIndex": 8,
+        "description": "Product management system with a user-friendly interface and full CRUD operations, optimized for usability and accessibility.",
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind", "NextJS", "MySQL", "Vercel", "Railway"],
+        "codeLink": "https://github.com/valentinmathey/CRUD-nextjs",
+        "demoLink": "https://crud-nextjs-vm.vercel.app/products"
+      },      
       {
         "title": "E-commerce",
         "imageIndex": 3,

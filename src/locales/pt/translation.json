@@ -18,7 +18,7 @@
     "technologies": {
         "title": "Tecnologias",
         "using": "Em uso",
-        "tapToRotate": "Toque para girar",
+        "tapToRotate": "Toque no ícone para girar",
         "learningShort": "Em aprendizado"
     },
     "experience": {
@@ -26,9 +26,24 @@
         "title": "Experiência",
         "items": [
             {
+                "year": "2024 - Atual",
+                "role": "Desenvolvedor Web",
+                "description": "Desenvolvi diversos sites junto a uma equipe de quatro pessoas, com foco na experiência do usuário e no desempenho. Criamos interfaces totalmente responsivas, otimizadas para dispositivos móveis, aplicando boas práticas de desenvolvimento, acessibilidade e padrões modernos da web. Implementamos estratégias de SEO e um design modular e escalável, priorizando um código limpo e de fácil manutenção. Integramos bibliotecas externas para mapas interativos, carrosséis de imagens e efeitos de movimento, melhorando a experiência visual e a interatividade.",
+                "technologies": [
+                    "NextJS",
+                    "React",
+                    "JavaScript",
+                    "TypeScript",
+                    "HTML",
+                    "CSS",
+                    "Tailwind",
+                    "MySQL"
+                ]
+            },
+            {
                 "year": "2022 - 2023",
                 "role": "Líder Técnico",
-                "description": "Liderei um projeto de desenvolvimento de software com metodologias ágeis, organizando a estrutura do projeto e revisando o código. Coordenei uma equipe multifuncional (backend, frontend, scrum master e agile delivery manager) para criar uma aplicação web que facilita a oferta, contratação e avaliação de serviços.",
+                "description": "Liderei um projeto de desenvolvimento de software utilizando metodologias ágeis, estruturando a arquitetura do sistema e realizando revisões de código. Coordenei uma equipe multidisciplinar (backend, frontend, Scrum Master e Agile Delivery Manager) para construir uma aplicação web que permite a gestão eficiente e escalável de ofertas de serviços, contratações e avaliações.",
                 "technologies": [
                     "Java",
                     "Spring Boot",
@@ -97,6 +112,24 @@
                 ],
                 "codeLink": "https://github.com/valentinmathey/MiMaridoTeLoHace",
                 "demoLink": "https://github.com/valentinmathey/MiMaridoTeLoHace"
+            },
+            {
+                "title": "CRUD - NextJS",
+                "imageIndex": 8,
+                "description": "Sistema de gestão de produtos com interface amigável e operações CRUD completas, otimizado para usabilidade e acessibilidade.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "Tailwind",
+                    "NextJS",
+                    "MySQL",
+                    "Vercel",
+                    "Railway"
+                ],
+                "codeLink": "https://github.com/valentinmathey/CRUD-nextjs",
+                "demoLink": "https://crud-nextjs-vm.vercel.app/products"
             },
             {
                 "title": "E-commerce",

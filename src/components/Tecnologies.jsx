@@ -26,6 +26,7 @@ export const Tecnologies = () => {
         { icon: SiJavascript, color: "text-yellow-500" },
         { icon: SiTypescript, color: "text-blue-500" },
         { icon: FaReact, color: "text-cyan-400" },
+        { icon: SiNextdotjs, color: "text-white" },
         { icon: BiLogoHtml5, color: "text-orange-500" },
         { icon: FaCss3Alt, color: "text-blue-600" },
         { icon: SiBootstrap, color: "text-purple-600" },
@@ -50,7 +51,6 @@ export const Tecnologies = () => {
     const learning = [
         { icon: FaPython, color: "text-yellow-500" },
         { icon: SiDjango, color: "text-green-600" },
-        { icon: SiNextdotjs, color: "text-white" },
         { icon: SiMongodb, color: "text-green-400" },
         
     ];

@@ -7,6 +7,7 @@ import project5 from "../assets/images/projects/project-5.webp";
 import project6 from "../assets/images/projects/project-6.webp";
 import project7 from "../assets/images/projects/project-7.webp";
 import project8 from "../assets/images/projects/project-8.webp";
+import project9 from "../assets/images/projects/project-9.webp";
 
 // Importar imágenes personales y logo
 import profilePic from "../assets/images/profile/valentinMatheyProfile.webp";
@@ -24,7 +25,7 @@ import cv from "../assets/pdf/CV - Valentin Mathey.pdf";
 export const IMAGES = {
   PROFILE: profilePic,
   LOGO: logo,
-  PROJECTS: [project1, project2, project3, project4, project5, project6, project7, project8],
+  PROJECTS: [project1, project2, project3, project4, project5, project6, project7, project8, project9],
   FLAGS: {
     ARGENTINA: argentinaFlag,
     USA: usaFlag,
