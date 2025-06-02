@@ -16,6 +16,7 @@
     "content": "<section><p>I am a fourth-year student of <strong class=\"highlight-purple\">Systems Engineering</strong> at the <strong class=\"highlight-purple\">National Technological University</strong>.</p><p class=\"mt-4\">From a young age, I was passionate about <strong class=\"highlight-pink\">programming</strong>. I started exploring <strong class=\"highlight-pink\">C#</strong> to create my own video games, which introduced me to the world of <strong class=\"highlight-purple\">software development</strong>.</p><p class=\"mt-4\">Nowadays, I apply <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong>, and <strong class=\"highlight-purple\">Spring Boot</strong> to create scalable and efficient solutions, always following <strong class=\"highlight-pink\">best practices</strong> and <strong class=\"highlight-pink\">design patterns</strong>.</p></section>"
   },
   "technologies": {
+    "id": "technologies",
     "title": "Technologies",
     "using": "In Use",
     "tapToRotate": "Tap the icon to rotate",

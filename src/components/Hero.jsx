@@ -60,7 +60,7 @@ export const Hero = () => {
                         animate="visible"
                         className="bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium"
                     >
-                        Backend Developer
+                        FullStack Developer
                     </motion.span>
                     <motion.p
                         variants={container(0)}

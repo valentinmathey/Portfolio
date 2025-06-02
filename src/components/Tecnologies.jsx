@@ -1,6 +1,33 @@
 import { BiLogoPostgresql, BiLogoHtml5 } from "react-icons/bi";
-import { FaCss3Alt, FaJava, FaNodeJs, FaReact, FaDocker, FaGitAlt, FaGithub, FaPython } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiSpringboot, SiC, SiMysql, SiJest, SiPostman, SiDjango, SiNextdotjs, SiMongodb, SiLinux, SiBootstrap, SiTailwindcss, SiJunit5 , SiHaskell, SiArduino } from "react-icons/si";
+import {
+    FaCss3Alt,
+    FaJava,
+    FaNodeJs,
+    FaReact,
+    FaDocker,
+    FaGitAlt,
+    FaGithub,
+    FaPython,
+} from "react-icons/fa";
+import {
+    SiJavascript,
+    SiTypescript,
+    SiSpringboot,
+    SiC,
+    SiMysql,
+    SiJest,
+    SiPostman,
+    SiDjango,
+    SiNextdotjs,
+    SiLinux,
+    SiBootstrap,
+    SiTailwindcss,
+    SiJunit5,
+    SiHaskell,
+    SiArduino,
+    SiFlask,
+    SiNestjs,
+} from "react-icons/si";
 import { motion, useAnimation } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -19,7 +46,6 @@ const iconVariants = (duration, index) => ({
 });
 
 export const Tecnologies = () => {
-
     const { t } = useTranslation();
 
     const technologies = [
@@ -45,14 +71,14 @@ export const Tecnologies = () => {
         { icon: SiJunit5, color: "text-green-500" },
         { icon: SiPostman, color: "text-orange-500" },
         { icon: SiHaskell, color: "text-purple-600" },
-        { icon: SiArduino, color: "text-blue-500" }
+        { icon: SiArduino, color: "text-blue-500" },
     ];
 
     const learning = [
         { icon: FaPython, color: "text-yellow-500" },
         { icon: SiDjango, color: "text-green-600" },
-        { icon: SiMongodb, color: "text-green-400" },
-        
+        { icon: SiFlask, color: "text-gray-600" },
+        { icon: SiNestjs, color: "text-red-500" },
     ];
 
     const handleClick = async (controls) => {
@@ -60,10 +86,8 @@ export const Tecnologies = () => {
         controls.set({ rotate: 0 });
     };
 
-    const sectionId = t("technologies.title").toLowerCase().replace(/\s+/g, "-");
-
     return (
-        <section id={sectionId} className="border-b border-neutral-800 pb-24">
+        <section id={t("technologies.id")} className="border-b border-neutral-800 pb-24">
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -50 }}
@@ -74,8 +98,12 @@ export const Tecnologies = () => {
                 {t("technologies.title")}
             </motion.h2>
 
-            <h3 className="text-center text-2xl font-semibold text-gray-300 mb-2">{t("technologies.using")}</h3>
-            <p className="text-center text-md text-gray-400 mb-6">{t("technologies.tapToRotate")}</p>
+            <h3 className="text-center text-2xl font-semibold text-gray-300 mb-2">
+                {t("technologies.using")}
+            </h3>
+            <p className="text-center text-md text-gray-400 mb-6">
+                {t("technologies.tapToRotate")}
+            </p>
             <motion.div
                 whileInView={{ opacity: 1, scale: 1 }}
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -103,7 +131,9 @@ export const Tecnologies = () => {
                 })}
             </motion.div>
 
-            <h3 className="text-center text-2xl font-semibold text-gray-300 mt-10 mb-6">{t("technologies.learningShort")}</h3>
+            <h3 className="text-center text-2xl font-semibold text-gray-300 mt-10 mb-6">
+                {t("technologies.learningShort")}
+            </h3>
             <motion.div
                 whileInView={{ opacity: 1, scale: 1 }}
                 initial={{ opacity: 0, scale: 0.8 }}
