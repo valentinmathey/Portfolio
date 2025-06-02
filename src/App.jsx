@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { About } from "./components/About"
 import { Contact } from "./components/Contact"
 import { Experience } from "./components/Experience"
@@ -31,6 +32,8 @@ function App() {
         <WhatsappIcon />
       </div>
       <Footer />
+
+      <Analytics />
     </div>
   )
 }
