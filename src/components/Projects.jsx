@@ -28,7 +28,7 @@ export const Projects = () => {
             </motion.h2>
 
             {/* Swiper de Proyectos */}
-            <div className="relative w-full py-10 px-4 md:px-8 max-w-7xl mx-auto">
+            <div className="relative w-full py-16 px-4 md:px-8 max-w-7xl mx-auto">
                 <Swiper
                     grabCursor={true}
                     loop={true}
@@ -46,11 +46,11 @@ export const Projects = () => {
                         clickable: true,
                     }}
                     modules={[Navigation, Pagination]}
-                    className="mySwiper !pb-14"
+                    className="mySwiper !pb-14 !pt-10"
                 >
 
                     {t("projects.items", { returnObjects: true }).map((project, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} className="h-auto">
                             <motion.div
                                 whileInView={{ opacity: 1, y: 0 }}
                                 initial={{ opacity: 0, y: 100 }}
@@ -60,7 +60,7 @@ export const Projects = () => {
                                     y: -10,
                                     boxShadow: "0px 10px 30px -10px rgba(168, 85, 247, 0.4)"
                                 }}
-                                className="group flex flex-col justify-between items-center h-[580px] w-full bg-neutral-900/80 border border-neutral-800 rounded-2xl p-6 text-center mx-auto hover:border-purple-500/50 transition-colors duration-300"
+                                className="group flex flex-col justify-between items-center min-h-[600px] h-full w-full bg-neutral-900/80 border border-neutral-800 rounded-2xl p-6 text-center mx-auto hover:border-purple-500/50 transition-colors duration-300"
                             >
                                 {/* Imagen */}
                                 <div className="w-full mb-6 overflow-hidden rounded-xl shadow-lg">
@@ -77,7 +77,7 @@ export const Projects = () => {
                                 </h3>
 
                                 {/* Descripción */}
-                                <p className="text-gray-400 text-sm leading-relaxed h-20 overflow-hidden line-clamp-3 mb-4">
+                                <p className="text-gray-400 text-sm leading-relaxed mb-4">
                                     {project.description}
                                 </p>
 
