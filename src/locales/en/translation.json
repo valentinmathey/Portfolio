@@ -13,7 +13,7 @@
   "about": {
     "id": "about-me",
     "title": "About Me",
-    "content": "<section><p>I am a fourth-year student of <strong class=\"highlight-purple\">Systems Engineering</strong> at the <strong class=\"highlight-purple\">National Technological University</strong>.</p><p class=\"mt-4\">From a young age, I was passionate about <strong class=\"highlight-pink\">programming</strong>. I started exploring <strong class=\"highlight-pink\">C#</strong> to create my own video games, which introduced me to the world of <strong class=\"highlight-purple\">software development</strong>.</p><p class=\"mt-4\">Nowadays, I apply <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong>, and <strong class=\"highlight-purple\">Spring Boot</strong> to create scalable and efficient solutions, always following <strong class=\"highlight-pink\">best practices</strong> and <strong class=\"highlight-pink\">design patterns</strong>.</p></section>"
+    "content": "<section><p>I am a <strong class=\"highlight-purple\">fifth-year Systems Engineering student</strong> at the <strong class=\"highlight-purple\">National Technological University</strong> and a <strong class=\"highlight-purple\">Full Stack Developer</strong> with experience in real-world projects.</p><p class=\"mt-4\">I work on the development of <strong class=\"highlight-purple\">scalable web applications</strong>, contributing to both frontend and backend, with a strong focus on <strong class=\"highlight-pink\">code quality</strong>, <strong class=\"highlight-pink\">maintainability</strong>, and <strong class=\"highlight-pink\">user experience</strong>.</p><p class=\"mt-4\">I currently use <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">Spring Boot</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">TypeScript</strong>, <strong class=\"highlight-purple\">Node.js</strong>, <strong class=\"highlight-purple\">NestJS</strong>, and <strong class=\"highlight-purple\">React / Next.js</strong>, integrating APIs, databases, and external services, while complementing development with knowledge in <strong class=\"highlight-pink\">Linux infrastructure</strong> and <strong class=\"highlight-pink\">automation</strong>.</p></section>"
   },
   "technologies": {
     "id": "technologies",
@@ -27,34 +27,77 @@
     "title": "Experience",
     "items": [
       {
-        "year": "2024 - Present",
-        "role": "Web Developer",
-        "description": "Developed multiple websites as part of a four-person team, with a strong focus on user experience and performance. Built fully responsive interfaces optimized for mobile devices, applying best development practices, accessibility standards, and modern web technologies. Implemented SEO strategies and modular, scalable design while prioritizing clean, maintainable code. Integrated external libraries for interactive maps, carousel sliders, and motion effects to enhance visual engagement and interactivity.",
+        "year": "2025 - Present",
+        "role": "Linux Infrastructure Administrator",
+        "company": "Boreal IT",
+        "description": "I manage Linux servers (RHEL, CentOS, AlmaLinux, and Oracle Linux) in virtualized environments using VMware and vCenter, ensuring system stability, availability, and proper operation. I automate operational and maintenance tasks through Bash and PowerShell scripting, optimizing recurring processes and reducing manual errors. I monitor critical services and analyze logs to proactively detect incidents and prevent disruptions in production environments. I participate in configuration standardization, server integration into centralized logging systems, and configuration tasks across both Linux and Windows environments. Additionally, I manage DNS configurations in Google Cloud, ensuring proper domain resolution and service availability.",
+        "technologies": [
+          "Linux (RHEL, CentOS, AlmaLinux, Oracle Linux)",
+          "Bash",
+          "PowerShell",
+          "Git",
+          "VMware",
+          "vCenter",
+          "Docker",
+          "MySQL",
+          "PostgreSQL",
+          "Oracle",
+          "SQL Server",
+          "CheckMK",
+          "PRTG",
+          "Percona PMM",
+          "Google Cloud"
+        ]
+      },
+      {
+        "year": "2025",
+        "role": "Full Stack Developer",
+        "company": "Unveil Creators Corp",
+        "description": "I participated in the development of a SaaS product for comprehensive restaurant management, working on frontend and backend applications designed for real production environments. I collaborated on automated reservation features integrated with WhatsApp and phone calls, using conversational AI for reservation handling and processing. I developed business logic for managing tables, zones, reservation statuses, orders, tickets, payments, and users, ensuring system consistency and scalability. I implemented integrations with point-of-sale (POS) systems using Square and managed subscriptions, plans, and add-ons through Stripe. I actively contributed to deployment, maintenance, and management of multiple environments (development, testing, and production).",
         "technologies": [
           "NextJS",
           "React",
-          "JavaScript",
+          "Node.js",
           "TypeScript",
+          "JavaScript",
           "HTML",
           "CSS",
           "Tailwind",
-          "MySQL"
+          "Python",
+          "Supabase (PostgreSQL)",
+          "Stripe",
+          "Docker",
+          "AWS",
+          "Vercel",
+          "Git",
+          "GitHub",
+          "REST APIs",
+          "Jira"
         ]
-      },      
+      },
       {
-        "year": "2022 - 2023",
-        "role": "Technical Lead",
-        "description": "Led a software development project using agile methodologies, structuring the system architecture and conducting code reviews. Coordinated a multidisciplinary team (backend, frontend, Scrum Master, and Agile Delivery Manager) to build a web application that enables efficient and scalable management of service offerings, hiring, and evaluation.",
+        "year": "2024 - 2025",
+        "role": "Web Developer",
+        "company": "Bugsless Design",
+        "description": "I developed multiple websites in collaboration with a development team, prioritizing user experience and overall performance. I implemented responsive interfaces optimized for mobile devices, adhering to accessibility standards and best development practices. I applied technical SEO strategies and modular design approaches that improved search engine visibility and facilitated code maintenance. I contributed to frontend architecture definition, component modularization, and external API integration to ensure scalability, reusability, and functional expansion of the projects.",
         "technologies": [
-          "Java",
-          "Spring Boot",
-          "MySQL",
-          "Thymeleaf",
+          "React",
+          "NextJS",
+          "TypeScript",
           "JavaScript",
           "HTML",
-          "CSS"
+          "CSS",
+          "Tailwind",
+          "NodeJS",
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "MySQL",
+          "Git",
+          "GitHub",
+          "REST APIs"
         ]
-      }      
+      }
     ]
   },
   "projects": {
@@ -118,19 +161,25 @@
         "title": "CRUD - NextJS",
         "imageIndex": 8,
         "description": "Product management system with a user-friendly interface and full CRUD operations, optimized for usability and accessibility.",
-        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind", "NextJS", "MySQL", "Vercel", "Railway"],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "Tailwind",
+          "NextJS",
+          "MySQL",
+          "Vercel",
+          "Railway"
+        ],
         "codeLink": "https://github.com/valentinmathey/CRUD-nextjs",
         "demoLink": "https://crud-nextjs-vm.vercel.app/products"
-      },      
+      },
       {
         "title": "E-commerce",
         "imageIndex": 3,
         "description": "Easily add, edit, and delete products with a search bar and organized categories for seamless catalog exploration.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript"],
         "codeLink": "https://github.com/YourGitHubUsername/DesarrolloSoftware",
         "demoLink": "https://ecommerce-restaurante-dev.vercel.app/"
       },
@@ -138,12 +187,7 @@
         "title": "Rick and Morty API",
         "imageIndex": 4,
         "description": "Discover and filter Rick and Morty characters with an interactive card-based design and efficient pagination.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
         "codeLink": "https://github.com/YourGitHubUsername/RickAndMorty-React-Exercises",
         "demoLink": "https://rick-and-morty-react-exercises.vercel.app/"
       },
@@ -151,10 +195,7 @@
         "title": "Parallel QuickSort",
         "imageIndex": 5,
         "description": "Parallel QuickSort implementation in C with MPI and Sieve of Eratosthenes, optimizing sorting and analysis of large datasets.",
-        "technologies": [
-          "C",
-          "MPI"
-        ],
+        "technologies": ["C", "MPI"],
         "codeLink": "https://github.com/valentinmathey/ParallelQuickSort",
         "demoLink": "https://github.com/valentinmathey/ParallelQuickSort"
       },
@@ -162,12 +203,7 @@
         "title": "Weather App",
         "imageIndex": 6,
         "description": "Check the weather in any city with accurate, real-time data in a modern and user-friendly interface.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "API"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript", "API"],
         "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
         "demoLink": "https://weather-app-dev-51.vercel.app/"
       },
@@ -175,13 +211,7 @@
         "title": "ToDo List",
         "imageIndex": 7,
         "description": "Organize your daily tasks efficiently with an intuitive app for adding, deleting, and managing your to-dos.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "TypeScript",
-          "React"
-        ],
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
         "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
         "demoLink": "https://to-do-dev-b.vercel.app/"
       }

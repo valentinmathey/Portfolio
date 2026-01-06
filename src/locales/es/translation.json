@@ -13,7 +13,7 @@
   "about": {
     "id": "sobre-mi",
     "title": "Sobre Mi",
-    "content": "<section><p>Soy estudiante de cuarto año de <strong class=\"highlight-purple\">Ingeniería en Sistemas</strong> en la <strong class=\"highlight-purple\">Universidad Tecnológica Nacional</strong>.</p><p class=\"mt-4\">Desde muy chico me apasionó la <strong class=\"highlight-pink\">programación</strong>. Comencé explorando <strong class=\"highlight-pink\">C#</strong> para crear mis propios videojuegos, lo cual me introdujo en el mundo del <strong class=\"highlight-purple\">desarrollo de software</strong>.</p><p class=\"mt-4\">Hoy en día, aplico <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong> y <strong class=\"highlight-purple\">Spring Boot</strong> para crear soluciones escalables y eficientes, siempre siguiendo <strong class=\"highlight-pink\">buenas prácticas</strong> y <strong class=\"highlight-pink\">patrones de diseño</strong>.</p></section>"
+    "content": "<section><p>Soy estudiante de <strong class=\"highlight-purple\">quinto año de Ingeniería en Sistemas</strong> en la <strong class=\"highlight-purple\">Universidad Tecnológica Nacional</strong> y <strong class=\"highlight-purple\">Desarrollador Full Stack</strong> con experiencia en proyectos reales.</p><p class=\"mt-4\">Trabajo en el desarrollo de <strong class=\"highlight-purple\">aplicaciones web escalables</strong>, participando tanto en frontend como backend, con foco en la <strong class=\"highlight-pink\">calidad del código</strong>, la <strong class=\"highlight-pink\">mantenibilidad</strong> y la <strong class=\"highlight-pink\">experiencia de usuario</strong>.</p><p class=\"mt-4\">Actualmente utilizo <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">Spring Boot</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">TypeScript</strong>, <strong class=\"highlight-purple\">Node.js</strong>, <strong class=\"highlight-purple\">NestJS</strong> y <strong class=\"highlight-purple\">React / Next.js</strong>, integrando APIs, bases de datos y servicios externos, y complementando el desarrollo con conocimientos en <strong class=\"highlight-pink\">infraestructura Linux</strong> y <strong class=\"highlight-pink\">automatización</strong>.</p></section>"
   },
   "technologies": {
     "id": "tecnologias",
@@ -27,35 +27,77 @@
     "title": "Experiencia",
     "items": [
       {
-        "year": "2024 - Actualidad",
-        "role": "Desarrollador Web",
-        "description": "Desarrollé múltiples sitios web junto a un equipo de tres colegas, con un enfoque centrado en la experiencia del usuario y el rendimiento. Creamos interfaces completamente responsive, optimizadas para dispositivos móviles, aplicando buenas prácticas de desarrollo, accesibilidad y estándares web modernos. Implementamos estrategias de posicionamiento SEO y diseño modular y escalable, priorizando código limpio y mantenible. Incorporamos librerías externas para mapas interactivos, sliders tipo carrusel y efectos de movimiento que mejoran la experiencia visual y la interacción.",
+        "year": "2025 - Actualidad",
+        "role": "Administrador de Infraestructura Linux",
+        "company": "Boreal IT",
+        "description": "Gestiono servidores Linux (RHEL, CentOS, AlmaLinux y Oracle Linux) en entornos virtualizados con VMware y vCenter, asegurando su estabilidad, disponibilidad y correcto funcionamiento. Automatizo tareas de operación y mantenimiento mediante scripting en Bash y PowerShell, optimizando procesos recurrentes y reduciendo errores manuales. Monitoreo servicios críticos y realizo análisis de logs para detectar proactivamente incidencias y prevenir interrupciones en entornos productivos. Participo en la estandarización de configuraciones, integración de servidores a sistemas centralizados de logs y tareas de configuración tanto en entornos Linux como Windows. Además, realizo gestión de DNS en Google Cloud, asegurando la correcta resolución de dominios y la disponibilidad de los servicios.",
+        "technologies": [
+          "Linux (RHEL, CentOS, AlmaLinux, Oracle Linux)",
+          "Bash",
+          "PowerShell",
+          "Git",
+          "VMware",
+          "vCenter",
+          "Docker",
+          "MySQL",
+          "PostgreSQL",
+          "Oracle",
+          "SQL Server",
+          "CheckMK",
+          "PRTG",
+          "Percona PMM",
+          "Google Cloud"
+        ]
+      },
+      {
+        "year": "2025",
+        "role": "Desarrollador Full Stack",
+        "company": "Unveil Creators Corp",
+        "description": "Participé en el desarrollo de un producto SaaS para la gestión integral de restaurantes, trabajando en aplicaciones frontend y backend orientadas a entornos productivos reales. Colaboré en funcionalidades de reservas automatizadas integradas con WhatsApp y llamadas telefónicas, utilizando IA conversacional para la atención y procesamiento de reservas. Desarrollé lógica de negocio para la gestión de mesas, zonas, estados de reserva, órdenes, comandas, pagos y usuarios, asegurando consistencia y escalabilidad del sistema. Implementé integraciones con sistemas de punto de venta (TPV) mediante Square y gestioné suscripciones, planes y add-ons utilizando Stripe. Participé activamente en tareas de despliegue, mantenimiento y control de múltiples entornos (desarrollo, testing y producción).",
         "technologies": [
           "NextJS",
           "React",
-          "JavaScript",
+          "Node.js",
           "TypeScript",
+          "JavaScript",
           "HTML",
           "CSS",
           "Tailwind",
-          "MySQL"
+          "Python",
+          "Supabase (PostgreSQL)",
+          "Stripe",
+          "Docker",
+          "AWS",
+          "Vercel",
+          "Git",
+          "GitHub",
+          "APIs REST",
+          "Jira"
         ]
-      },      
+      },
       {
-        "year": "2022 - 2023",
-        "role": "Líder Técnico",
-        "description": "Lideré un proyecto de desarrollo de software aplicando metodologías ágiles, estructurando la arquitectura del sistema y realizando revisión de código. Coordiné un equipo multidisciplinario (backend, frontend, Scrum Master y Agile Delivery Manager) para crear una aplicación web que permite gestionar la oferta, contratación y evaluación de servicios de manera eficiente y escalable.",
+        "year": "2024 - 2025",
+        "role": "Desarrollador Web",
+        "company": "Bugsless Design",
+        "description": "Desarrollé múltiples sitios web en colaboración con un equipo de desarrollo, priorizando la experiencia de usuario y el rendimiento general. Implementé interfaces responsive optimizadas para dispositivos móviles, cumpliendo con estándares de accesibilidad y buenas prácticas de desarrollo. Apliqué estrategias de SEO técnico y diseño modular que mejoraron la visibilidad en buscadores y facilitaron el mantenimiento del código. Aporté en la definición de arquitectura frontend, la modularización de componentes y la integración de APIs externas para asegurar la escalabilidad, reutilización y expansión funcional de los proyectos.",
         "technologies": [
-          "Java",
-          "Spring Boot",
-          "MySQL",
-          "Thymeleaf",
+          "React",
+          "NextJS",
+          "TypeScript",
           "JavaScript",
           "HTML",
-          "CSS"
+          "CSS",
+          "Tailwind",
+          "NodeJS",
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "MySQL",
+          "Git",
+          "GitHub",
+          "REST APIs"
         ]
       }
-      
     ]
   },
   "projects": {
@@ -70,7 +112,14 @@
         "title": "Heroes App",
         "imageIndex": 0,
         "description": "Explora héroes de DC y Marvel con sus alter egos, primeras apariciones y editoriales en una plataforma visual e interactiva.",
-        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux"],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Redux"
+        ],
         "codeLink": "https://github.com/YourGitHubUsername/HeroesApp",
         "demoLink": "https://heroes-app-dev.vercel.app/"
       },
@@ -78,7 +127,16 @@
         "title": "BugsLess Design",
         "imageIndex": 1,
         "description": "Emprendimiento especializado en landing pages, e-commerce, webs y bots personalizados para tu negocio.",
-        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Tailwind", "Framer Motion", "Swiper"],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Tailwind",
+          "Framer Motion",
+          "Swiper"
+        ],
         "codeLink": "https://bugs-less-design.vercel.app/",
         "demoLink": "https://bugs-less-design.vercel.app/"
       },
@@ -86,7 +144,16 @@
         "title": "Mi Marido Te Lo Hace",
         "imageIndex": 2,
         "description": "Plataforma para barrios cerrados que conecta usuarios con proveedores calificados, permitiendo buscar, contactar y calificar servicios fácilmente.",
-        "technologies": ["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript", "Thymeleaf", "Bootstrap"],
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Thymeleaf",
+          "Bootstrap"
+        ],
         "codeLink": "https://github.com/valentinmathey/MiMaridoTeLoHace",
         "demoLink": "https://github.com/valentinmathey/MiMaridoTeLoHace"
       },
@@ -94,7 +161,17 @@
         "title": "Crud - NetxJS",
         "imageIndex": 8,
         "description": "Sistema de gestión de productos con interfaz amigable y operaciones CRUD completas, optimizado para usabilidad y accesibilidad.",
-        "technologies": ["HTML", "CSS", "JavaScript","TypeScript", "Tailwind", "NextJS","MySQL", "Vercel", "Railway"],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "Tailwind",
+          "NextJS",
+          "MySQL",
+          "Vercel",
+          "Railway"
+        ],
         "codeLink": "https://github.com/valentinmathey/CRUD-nextjs",
         "demoLink": "https://crud-nextjs-vm.vercel.app/products"
       },

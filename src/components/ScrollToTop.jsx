@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ScrollToTop = () => {
     // Estado para controlar si el botón debe ser visible
@@ -28,30 +29,37 @@ const ScrollToTop = () => {
     }, []);
 
     return (
-        isVisible && ( // Solo renderiza el botón si es visible
-            <button
-                onClick={scrollToTop} // Acción al hacer clic
-                className={`p-3 rounded-full shadow-xl transition-all flex items-center justify-center w-12 h-12 brightness-110 ${
-                    isClicked ? "bg-purple-400 text-white" : "bg-purple-600 text-white hover:bg-purple-500"
-                }`}
-            >
-                {/* Icono de flecha hacia arriba */}
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6"
+        <AnimatePresence>
+            {isVisible && (
+                <motion.button
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.5 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={scrollToTop}
+                    className={`p-2 md:p-3 rounded-full shadow-2xl backdrop-blur-md transition-colors flex items-center justify-center w-10 h-10 md:w-14 md:h-14 border border-purple-400/30 ${
+                        isClicked ? "bg-purple-500 text-white" : "bg-purple-600/90 text-white hover:bg-purple-500"
+                    }`}
                 >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 15l7-7 7 7" // Define la forma de la flecha
-                    />
-                </svg>
-            </button>
-        )
+                    {/* Icono de flecha hacia arriba */}
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2.5}
+                        stroke="currentColor"
+                        className="w-5 h-5 md:w-6 md:h-6"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                        />
+                    </svg>
+                </motion.button>
+            )}
+        </AnimatePresence>
     );
 };
 

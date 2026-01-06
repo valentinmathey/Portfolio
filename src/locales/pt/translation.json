@@ -1,234 +1,254 @@
 {
-    "navbar": {
-        "home": "Início",
-        "about": "Sobre Mim",
-        "technologies": "Tecnologias",
-        "experience": "Experiência",
-        "projects": "Projetos",
-        "contact": "Contato"
-    },
-    "home": {
-        "id": "inicio"
-    },
-    "about": {
-        "id": "sobre-mim",
-        "title": "Sobre Mim",
-        "content": "<section><p>Sou estudante do quarto ano de <strong class=\"highlight-purple\">Engenharia de Sistemas</strong> na <strong class=\"highlight-purple\">Universidade Tecnológica Nacional</strong>.</p><p class=\"mt-4\">Desde muito jovem, me apaixonei pela <strong class=\"highlight-pink\">programação</strong>. Comecei explorando <strong class=\"highlight-pink\">C#</strong> para criar meus próprios videogames, o que me introduziu ao mundo do <strong class=\"highlight-purple\">desenvolvimento de software</strong>.</p><p class=\"mt-4\">Hoje em dia, aplico <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">React</strong> e <strong class=\"highlight-purple\">Spring Boot</strong> para criar soluções escaláveis e eficientes, sempre seguindo <strong class=\"highlight-pink\">boas práticas</strong> e <strong class=\"highlight-pink\">padrões de design</strong>.</p></section>"
-    },
-    "technologies": {
-        "id": "tecnologias",
-        "title": "Tecnologias",
-        "using": "Em uso",
-        "tapToRotate": "Toque no ícone para girar",
-        "learningShort": "Em aprendizado"
-    },
-    "experience": {
-        "id": "experiencia",
-        "title": "Experiência",
-        "items": [
-            {
-                "year": "2024 - Atual",
-                "role": "Desenvolvedor Web",
-                "description": "Desenvolvi diversos sites junto a uma equipe de quatro pessoas, com foco na experiência do usuário e no desempenho. Criamos interfaces totalmente responsivas, otimizadas para dispositivos móveis, aplicando boas práticas de desenvolvimento, acessibilidade e padrões modernos da web. Implementamos estratégias de SEO e um design modular e escalável, priorizando um código limpo e de fácil manutenção. Integramos bibliotecas externas para mapas interativos, carrosséis de imagens e efeitos de movimento, melhorando a experiência visual e a interatividade.",
-                "technologies": [
-                    "NextJS",
-                    "React",
-                    "JavaScript",
-                    "TypeScript",
-                    "HTML",
-                    "CSS",
-                    "Tailwind",
-                    "MySQL"
-                ]
-            },
-            {
-                "year": "2022 - 2023",
-                "role": "Líder Técnico",
-                "description": "Liderei um projeto de desenvolvimento de software utilizando metodologias ágeis, estruturando a arquitetura do sistema e realizando revisões de código. Coordenei uma equipe multidisciplinar (backend, frontend, Scrum Master e Agile Delivery Manager) para construir uma aplicação web que permite a gestão eficiente e escalável de ofertas de serviços, contratações e avaliações.",
-                "technologies": [
-                    "Java",
-                    "Spring Boot",
-                    "MySQL",
-                    "Thymeleaf",
-                    "JavaScript",
-                    "HTML",
-                    "CSS"
-                ]
-            }
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre Mim",
+    "technologies": "Tecnologias",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "home": {
+    "id": "inicio"
+  },
+  "about": {
+    "id": "sobre-mim",
+    "title": "Sobre Mim",
+    "content": "<section><p>Sou estudante do <strong class=\"highlight-purple\">quinto ano de Engenharia de Sistemas</strong> na <strong class=\"highlight-purple\">Universidade Tecnológica Nacional</strong> e <strong class=\"highlight-purple\">Desenvolvedor Full Stack</strong> com experiência em projetos reais.</p><p class=\"mt-4\">Atuo no desenvolvimento de <strong class=\"highlight-purple\">aplicações web escaláveis</strong>, participando tanto do frontend quanto do backend, com foco na <strong class=\"highlight-pink\">qualidade do código</strong>, <strong class=\"highlight-pink\">manutenibilidade</strong> e <strong class=\"highlight-pink\">experiência do usuário</strong>.</p><p class=\"mt-4\">Atualmente utilizo <strong class=\"highlight-purple\">Java</strong>, <strong class=\"highlight-purple\">Spring Boot</strong>, <strong class=\"highlight-purple\">JavaScript</strong>, <strong class=\"highlight-purple\">TypeScript</strong>, <strong class=\"highlight-purple\">Node.js</strong>, <strong class=\"highlight-purple\">NestJS</strong> e <strong class=\"highlight-purple\">React / Next.js</strong>, integrando APIs, bancos de dados e serviços externos, complementando o desenvolvimento com conhecimentos em <strong class=\"highlight-pink\">infraestrutura Linux</strong> e <strong class=\"highlight-pink\">automação</strong>.</p></section>"
+  },
+  "technologies": {
+    "id": "tecnologias",
+    "title": "Tecnologias",
+    "using": "Em uso",
+    "tapToRotate": "Toque no ícone para girar",
+    "learningShort": "Em aprendizado"
+  },
+  "experience": {
+    "id": "experiência",
+    "title": "Experiência",
+    "items": [
+      {
+        "year": "2025 - Atual",
+        "role": "Administrador de Infraestrutura Linux",
+        "company": "Boreal IT",
+        "description": "Gerencio servidores Linux (RHEL, CentOS, AlmaLinux e Oracle Linux) em ambientes virtualizados com VMware e vCenter, garantindo estabilidade, disponibilidade e funcionamento adequado. Automatizo tarefas operacionais e de manutenção por meio de scripts em Bash e PowerShell, otimizando processos recorrentes e reduzindo erros manuais. Monitoro serviços críticos e realizo análise de logs para detectar proativamente incidentes e prevenir interrupções em ambientes produtivos. Participo da padronização de configurações, integração de servidores a sistemas centralizados de logs e atividades de configuração tanto em ambientes Linux quanto Windows. Além disso, realizo a gestão de DNS no Google Cloud, garantindo a correta resolução de domínios e a disponibilidade dos serviços.",
+        "technologies": [
+          "Linux (RHEL, CentOS, AlmaLinux, Oracle Linux)",
+          "Bash",
+          "PowerShell",
+          "Git",
+          "VMware",
+          "vCenter",
+          "Docker",
+          "MySQL",
+          "PostgreSQL",
+          "Oracle",
+          "SQL Server",
+          "CheckMK",
+          "PRTG",
+          "Percona PMM",
+          "Google Cloud"
         ]
-    },
-    "projects": {
-        "id": "projetos",
-        "title": "Projetos",
-        "buttons": {
-            "code": "Código",
-            "demo": "Demo"
-        },
-        "items": [
-            {
-                "title": "Heroes App",
-                "imageIndex": 0,
-                "description": "Explore heróis da DC e Marvel, incluindo seus alter egos, primeiras aparições e editoras, em uma plataforma visual e interativa.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "TypeScript",
-                    "React",
-                    "Redux"
-                ],
-                "codeLink": "https://github.com/YourGitHubUsername/HeroesApp",
-                "demoLink": "https://heroes-app-dev.vercel.app/"
-            },
-            {
-                "title": "BugsLess Design",
-                "imageIndex": 1,
-                "description": "Startup especializada em landing pages, e-commerce, sites e bots personalizados para atender às necessidades do seu negócio.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "TypeScript",
-                    "React",
-                    "Tailwind",
-                    "Framer Motion",
-                    "Swiper"
-                ],
-                "codeLink": "https://bugs-less-design.vercel.app/",
-                "demoLink": "https://bugs-less-design.vercel.app/"
-            },
-            {
-                "title": "Mi Marido Te Lo Hace",
-                "imageIndex": 2,
-                "description": "Plataforma para condomínios fechados que conecta usuários a prestadores de serviços qualificados, permitindo buscar, contatar e avaliar serviços com facilidade.",
-                "technologies": [
-                    "Java",
-                    "Spring Boot",
-                    "MySQL",
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "Thymeleaf",
-                    "Bootstrap"
-                ],
-                "codeLink": "https://github.com/valentinmathey/MiMaridoTeLoHace",
-                "demoLink": "https://github.com/valentinmathey/MiMaridoTeLoHace"
-            },
-            {
-                "title": "CRUD - NextJS",
-                "imageIndex": 8,
-                "description": "Sistema de gestão de produtos com interface amigável e operações CRUD completas, otimizado para usabilidade e acessibilidade.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "TypeScript",
-                    "Tailwind",
-                    "NextJS",
-                    "MySQL",
-                    "Vercel",
-                    "Railway"
-                ],
-                "codeLink": "https://github.com/valentinmathey/CRUD-nextjs",
-                "demoLink": "https://crud-nextjs-vm.vercel.app/products"
-            },
-            {
-                "title": "E-commerce",
-                "imageIndex": 3,
-                "description": "Adicione, edite e exclua produtos facilmente com uma barra de busca e categorias organizadas para explorar o catálogo.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript"
-                ],
-                "codeLink": "https://github.com/YourGitHubUsername/DesarrolloSoftware",
-                "demoLink": "https://ecommerce-restaurante-dev.vercel.app/"
-            },
-            {
-                "title": "Rick and Morty API",
-                "imageIndex": 4,
-                "description": "Descubra e filtre personagens de Rick and Morty com um design interativo de cartas e paginação eficiente.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "React"
-                ],
-                "codeLink": "https://github.com/YourGitHubUsername/RickAndMorty-React-Exercises",
-                "demoLink": "https://rick-and-morty-react-exercises.vercel.app/"
-            },
-            {
-                "title": "Parallel QuickSort",
-                "imageIndex": 5,
-                "description": "Implementação paralela do QuickSort em C com MPI e Crivo de Eratóstenes, otimizando a ordenação e análise de grandes conjuntos de dados.",
-                "technologies": [
-                    "C",
-                    "MPI"
-                ],
-                "codeLink": "https://github.com/valentinmathey/ParallelQuickSort",
-                "demoLink": "https://github.com/valentinmathey/ParallelQuickSort"
-            },
-            {
-                "title": "Weather App",
-                "imageIndex": 6,
-                "description": "Consulte o clima de qualquer cidade com dados precisos e atualizados em tempo real em uma interface moderna e simples.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "API"
-                ],
-                "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
-                "demoLink": "https://weather-app-dev-51.vercel.app/"
-            },
-            {
-                "title": "ToDo List",
-                "imageIndex": 7,
-                "description": "Organize suas tarefas diárias de forma eficiente com um app intuitivo para adicionar, excluir e gerenciar pendências.",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "TypeScript",
-                    "React"
-                ],
-                "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
-                "demoLink": "https://to-do-dev-b.vercel.app/"
-            }
+      },
+      {
+        "year": "2025",
+        "role": "Desenvolvedor Full Stack",
+        "company": "Unveil Creators Corp",
+        "description": "Participei do desenvolvimento de um produto SaaS para a gestão integral de restaurantes, atuando em aplicações frontend e backend voltadas para ambientes produtivos reais. Colaborei em funcionalidades de reservas automatizadas integradas com WhatsApp e chamadas telefônicas, utilizando IA conversacional para atendimento e processamento de reservas. Desenvolvi lógica de negócio para a gestão de mesas, zonas, status de reservas, pedidos, comandas, pagamentos e usuários, garantindo consistência e escalabilidade do sistema. Implementei integrações com sistemas de ponto de venda (POS) por meio do Square e gerenciei assinaturas, planos e add-ons utilizando Stripe. Participei ativamente de atividades de deploy, manutenção y gestão de múltiplos ambientes (desenvolvimento, testes e produção).",
+        "technologies": [
+          "NextJS",
+          "React",
+          "Node.js",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "Python",
+          "Supabase (PostgreSQL)",
+          "Stripe",
+          "Docker",
+          "AWS",
+          "Vercel",
+          "Git",
+          "GitHub",
+          "APIs REST",
+          "Jira"
         ]
+      },
+      {
+        "year": "2024 - 2025",
+        "role": "Desenvolvedor Web",
+        "company": "Bugsless Design",
+        "description": "Desenvolvi diversos sites em colaboração com uma equipe de desenvolvimento, priorizando a experiência do usuário e o desempenho geral. Implementei interfaces responsivas otimizadas para dispositivos móveis, seguindo padrões de acessibilidade e boas práticas de desenvolvimento. Apliquei estratégias de SEO técnico e design modular que melhoraram a visibilidade nos mecanismos de busca e facilitaram a manutenção do código. Contribuí para a definição da arquitetura frontend, modularização de componentes e integração de APIs externas, garantindo escalabilidade, reutilização e expansão funcional dos projetos.",
+        "technologies": [
+          "React",
+          "NextJS",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "NodeJS",
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "MySQL",
+          "Git",
+          "GitHub",
+          "REST APIs"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "id": "projetos",
+    "title": "Projetos",
+    "buttons": {
+      "code": "Código",
+      "demo": "Demo"
     },
-    "contact": {
-        "id": "contato",
-        "title": "Entre em Contato",
-        "form": {
-            "name": {
-                "label": "Nome",
-                "placeholder": "Seu nome"
-            },
-            "email": {
-                "label": "E-mail",
-                "placeholder": "seuemail@exemplo.com"
-            },
-            "message": {
-                "label": "Mensagem",
-                "placeholder": "Escreva sua mensagem aqui"
-            },
-            "button": "Enviar Mensagem"
-        },
-        "success": {
-            "title": "Mensagem Enviada!",
-            "text": "Sua mensagem foi enviada com sucesso."
-        },
-        "error": {
-            "title": "Erro",
-            "text": "Houve um problema ao enviar a mensagem."
-        }
+    "items": [
+      {
+        "title": "Heroes App",
+        "imageIndex": 0,
+        "description": "Explore heróis da DC e Marvel, incluindo seus alter egos, primeiras aparições e editoras, em uma plataforma visual e interativa.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Redux"
+        ],
+        "codeLink": "https://github.com/YourGitHubUsername/HeroesApp",
+        "demoLink": "https://heroes-app-dev.vercel.app/"
+      },
+      {
+        "title": "BugsLess Design",
+        "imageIndex": 1,
+        "description": "Startup especializada em landing pages, e-commerce, sites e bots personalizados para atender às necessidades do seu negócio.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Tailwind",
+          "Framer Motion",
+          "Swiper"
+        ],
+        "codeLink": "https://bugs-less-design.vercel.app/",
+        "demoLink": "https://bugs-less-design.vercel.app/"
+      },
+      {
+        "title": "Mi Marido Te Lo Hace",
+        "imageIndex": 2,
+        "description": "Plataforma para condomínios fechados que conecta usuários a prestadores de serviços qualificados, permitindo buscar, contatar e avaliar serviços com facilidade.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Thymeleaf",
+          "Bootstrap"
+        ],
+        "codeLink": "https://github.com/valentinmathey/MiMaridoTeLoHace",
+        "demoLink": "https://github.com/valentinmathey/MiMaridoTeLoHace"
+      },
+      {
+        "title": "CRUD - NextJS",
+        "imageIndex": 8,
+        "description": "Sistema de gestão de produtos com interface amigável e operações CRUD completas, otimizado para usabilidade e acessibilidade.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "Tailwind",
+          "NextJS",
+          "MySQL",
+          "Vercel",
+          "Railway"
+        ],
+        "codeLink": "https://github.com/valentinmathey/CRUD-nextjs",
+        "demoLink": "https://crud-nextjs-vm.vercel.app/products"
+      },
+      {
+        "title": "E-commerce",
+        "imageIndex": 3,
+        "description": "Adicione, edite e exclua produtos facilmente com uma barra de busca e categorias organizadas para explorar o catálogo.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "codeLink": "https://github.com/YourGitHubUsername/DesarrolloSoftware",
+        "demoLink": "https://ecommerce-restaurante-dev.vercel.app/"
+      },
+      {
+        "title": "Rick and Morty API",
+        "imageIndex": 4,
+        "description": "Descubra e filtre personagens de Rick and Morty com um design interativo de cartas e paginação eficiente.",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "codeLink": "https://github.com/YourGitHubUsername/RickAndMorty-React-Exercises",
+        "demoLink": "https://rick-and-morty-react-exercises.vercel.app/"
+      },
+      {
+        "title": "Parallel QuickSort",
+        "imageIndex": 5,
+        "description": "Implementação paralela do QuickSort em C com MPI e Crivo de Eratóstenes, otimizando a ordenação e análise de grandes conjuntos de dados.",
+        "technologies": ["C", "MPI"],
+        "codeLink": "https://github.com/valentinmathey/ParallelQuickSort",
+        "demoLink": "https://github.com/valentinmathey/ParallelQuickSort"
+      },
+      {
+        "title": "Weather App",
+        "imageIndex": 6,
+        "description": "Consulte o clima de qualquer cidade com dados precisos e atualizados em tempo real em uma interface moderna e simples.",
+        "technologies": ["HTML", "CSS", "JavaScript", "API"],
+        "codeLink": "https://github.com/YourGitHubUsername/MUI-Exercises",
+        "demoLink": "https://weather-app-dev-51.vercel.app/"
+      },
+      {
+        "title": "ToDo List",
+        "imageIndex": 7,
+        "description": "Organize suas tarefas diárias de forma eficiente com um app intuitivo para adicionar, excluir e gerenciar pendências.",
+        "technologies": ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
+        "codeLink": "https://github.com/YourGitHubUsername/AprendiendoTypeScript",
+        "demoLink": "https://to-do-dev-b.vercel.app/"
+      }
+    ]
+  },
+  "contact": {
+    "id": "contato",
+    "title": "Entre em Contato",
+    "form": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Seu nome"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "seuemail@exemplo.com"
+      },
+      "message": {
+        "label": "Mensagem",
+        "placeholder": "Escreva sua mensagem aqui"
+      },
+      "button": "Enviar Mensagem"
     },
-    "whatsappIcon": {
-        "whatsappMessage": "Olá, vim do seu portfólio web e gostaria de entrar em contato com você"
+    "success": {
+      "title": "Mensagem Enviada!",
+      "text": "Sua mensagem foi enviada com sucesso."
     },
-    "footer": {
-        "location": "Mendoza, Argentina",
-        "rights": "© {{year}} Valentin Mathey."
+    "error": {
+      "title": "Erro",
+      "text": "Houve um problema ao enviar a mensagem."
     }
+  },
+  "whatsappIcon": {
+    "whatsappMessage": "Olá, vim do seu portfólio web e gostaria de entrar em contato com você"
+  },
+  "footer": {
+    "location": "Mendoza, Argentina",
+    "rights": "© {{year}} Valentin Mathey."
+  }
 }
