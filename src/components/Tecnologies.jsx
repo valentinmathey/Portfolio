@@ -85,12 +85,6 @@ const TechGroup = ({ title, items }) => (
             variants={itemVariants}
             className="group relative flex flex-col items-center"
           >
-             {/* Tooltip */}
-             <span className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-neutral-800 px-2 py-1 text-sm text-gray-200 opacity-0 transition-opacity duration-300 group-hover:opacity-100 border border-neutral-700 shadow-lg z-20">
-              {name}
-              <div className="absolute top-full left-1/2 -ml-1 border-4 border-transparent border-t-neutral-700"></div>
-            </span>
-
             <motion.div
               variants={iconFloatingVariants(duration)}
               initial="initial"
@@ -107,6 +101,10 @@ const TechGroup = ({ title, items }) => (
                 <Icon className={`text-6xl sm:text-7xl mx-auto ${color}`} />
               </motion.div>
             </motion.div>
+            
+            <span className="mt-2 text-sm font-medium text-gray-300 text-center">
+              {name}
+            </span>
           </motion.div>
         );
       })}
