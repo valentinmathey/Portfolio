@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "home": "Início",
+    "home": "Inicio",
     "about": "Sobre Mim",
     "technologies": "Tecnologias",
     "experience": "Experiência",
@@ -65,6 +65,7 @@
           "CSS",
           "Tailwind",
           "Python",
+          "FastAPI",
           "Supabase (PostgreSQL)",
           "Stripe",
           "Docker",
