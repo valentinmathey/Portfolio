@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { IMAGES } from "../constants";
 import { BiX, BiMenu } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
@@ -14,9 +14,16 @@ export const Navbar = () => {
     const isManualScrolling = useRef(false);
 
     // Detectar scroll para efecto glassmorphism
+
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            const currentScroll = window.scrollY;
+            setScrolled(currentScroll > 50);
+
+            // Failsafe: Si estamos muy arriba, forzamos "home"
+            if (currentScroll < 100 && !isManualScrolling.current) {
+                setActiveSection("home");
+            }
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -46,7 +53,7 @@ export const Navbar = () => {
                 });
             },
             { 
-               rootMargin: "-45% 0px -45% 0px", // Center scanline approach for reliable detection of all sizes
+               rootMargin: "-35% 0px -35% 0px", // Widen the scanline to detection easier
                threshold: 0 
             }
         );

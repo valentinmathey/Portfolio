@@ -23,13 +23,15 @@ import {
   SiTailwindcss,
   SiJunit5,
   SiArduino,
-  SiFlask,
   SiNestjs,
   SiOracle,
   SiSupabase,
   SiAmazonwebservices,
   SiGooglecloud,
   SiGithubactions,
+  SiFastapi,
+  SiOdoo,
+  SiJira,
 } from "react-icons/si";
 import { motion, useAnimation } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -62,6 +64,49 @@ const iconFloatingVariants = (duration) => ({
   },
 });
 
+import PropTypes from 'prop-types';
+
+const TechItem = ({ icon: Icon, color, name, variants }) => {
+  const controls = useAnimation();
+  // Generate a random duration between 2 and 4 seconds for organic feel
+  const duration = Math.random() * 2 + 2;
+
+  return (
+    <motion.div
+      variants={variants}
+      className="group relative flex flex-col items-center"
+    >
+      <motion.div
+        variants={iconFloatingVariants(duration)}
+        initial="initial"
+        animate="animate"
+        whileHover={{ scale: 1.15 }}
+        onClick={() =>
+          controls
+            .start({ rotate: 360, transition: { duration: 0.6 } })
+            .then(() => controls.set({ rotate: 0 }))
+        }
+        className="rounded-xl border-4 border-neutral-800 p-4 shadow-lg cursor-pointer bg-neutral-900/50"
+      >
+        <motion.div animate={controls}>
+          <Icon className={`text-6xl sm:text-7xl mx-auto ${color}`} />
+        </motion.div>
+      </motion.div>
+      
+      <span className="mt-2 text-sm font-medium text-gray-300 text-center">
+        {name}
+      </span>
+    </motion.div>
+  );
+};
+
+TechItem.propTypes = {
+  icon: PropTypes.elementType.isRequired,
+  color: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  variants: PropTypes.object,
+};
+
 const TechGroup = ({ title, items }) => (
   <motion.div 
     variants={containerVariants}
@@ -70,47 +115,29 @@ const TechGroup = ({ title, items }) => (
     viewport={{ once: true, margin: "-50px" }}
     className="mb-8 w-full max-w-5xl mx-auto rounded-2xl border border-neutral-800 bg-neutral-900/30 p-6 backdrop-blur-sm"
   >
-    <h4 className="w-full text-center text-xl font-semibold text-gray-400 mb-6">
-      {title}
-    </h4>
+    {title && (
+      <h4 className="w-full text-center text-xl font-semibold text-gray-400 mb-6">
+        {title}
+      </h4>
+    )}
     <div className="flex flex-wrap items-center justify-center gap-6">
-      {items.map(({ icon: Icon, color, name }, index) => {
-        const controls = useAnimation();
-        // Generate a random duration between 2 and 4 seconds for organic feel
-        const duration = Math.random() * 2 + 2; 
-        
-        return (
-          <motion.div
-            key={index}
-            variants={itemVariants}
-            className="group relative flex flex-col items-center"
-          >
-            <motion.div
-              variants={iconFloatingVariants(duration)}
-              initial="initial"
-              animate="animate"
-              whileHover={{ scale: 1.15 }}
-              onClick={() =>
-                controls
-                  .start({ rotate: 360, transition: { duration: 0.6 } })
-                  .then(() => controls.set({ rotate: 0 }))
-              }
-              className="rounded-xl border-4 border-neutral-800 p-4 shadow-lg cursor-pointer bg-neutral-900/50"
-            >
-              <motion.div animate={controls}>
-                <Icon className={`text-6xl sm:text-7xl mx-auto ${color}`} />
-              </motion.div>
-            </motion.div>
-            
-            <span className="mt-2 text-sm font-medium text-gray-300 text-center">
-              {name}
-            </span>
-          </motion.div>
-        );
-      })}
+      {items.map((item, index) => (
+        <TechItem key={index} {...item} variants={itemVariants} />
+      ))}
     </div>
   </motion.div>
 );
+
+TechGroup.propTypes = {
+  title: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.elementType.isRequired,
+      color: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export const Tecnologies = () => {
   const { t } = useTranslation();
@@ -129,6 +156,8 @@ export const Tecnologies = () => {
       { icon: SiTypescript, color: "text-blue-500", name: "TypeScript" },
       { icon: FaNodeJs, color: "text-green-400", name: "Node.js" },
       { icon: SiNestjs, color: "text-red-500", name: "NestJS" },
+      { icon: FaPython, color: "text-yellow-500", name: "Python" },
+      { icon: SiFastapi, color: "text-teal-500", name: "FastAPI" },
       { icon: FaJava, color: "text-red-500", name: "Java" },
       { icon: SiSpringboot, color: "text-green-600", name: "Spring Boot" },
     ],
@@ -152,13 +181,13 @@ export const Tecnologies = () => {
       { icon: SiJest, color: "text-red-500", name: "Jest" },
       { icon: SiJunit5, color: "text-green-500", name: "JUnit 5" },
       { icon: SiArduino, color: "text-blue-500", name: "Arduino" },
+      { icon: SiJira, color: "text-blue-500", name: "Jira" },
     ],
   };
 
   const learning = [
-    { icon: FaPython, color: "text-yellow-500", name: "Python" },
     { icon: SiDjango, color: "text-green-600", name: "Django" },
-    { icon: SiFlask, color: "text-gray-500", name: "Flask" },
+    { icon: SiOdoo, color: "text-purple-500", name: "Odoo" },
   ];
 
   return (

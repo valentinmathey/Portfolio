@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -13,7 +13,7 @@ const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 export const Contact = () => {
     const form = useRef();
 
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     // ID dinámico basado en el idioma
     const sectionId = t("contact.id");

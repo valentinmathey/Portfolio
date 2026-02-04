@@ -1,6 +1,5 @@
 import { FaMapMarkerAlt, FaHeart } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { IMAGES } from "../constants";
 
 export const Footer = () => {
     const { t } = useTranslation();

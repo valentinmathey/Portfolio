@@ -19,7 +19,8 @@ import usaFlag from "../assets/images/flags/usa.png";
 import brasilFlag from "../assets/images/flags/brasil.png";
 
 // Importar documentos
-import cv from "../assets/pdf/CV - Valentin Mathey.pdf";
+import cvEs from "../assets/pdf/CV - Valentin Mathey.pdf";
+import cvEn from "../assets/pdf/Professional CV - Valentin Mathey.pdf";
 
 /** ===================== IMÁGENES ===================== **/
 export const IMAGES = {
@@ -35,7 +36,8 @@ export const IMAGES = {
 
 /** ===================== DOCUMENTOS ===================== **/
 export const FILES = {
-  CV: cv,
+  CV_ES: cvEs,
+  CV_EN: cvEn,
 };
 
 /** ===================== ENLACES EXTERNOS ===================== **/

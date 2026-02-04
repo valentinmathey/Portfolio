@@ -14,7 +14,11 @@ const container = (delay) => ({
 
 export const Hero = () => {
 
-    const { t } = useTranslation(); // Hook para traducciones
+    const { t, i18n } = useTranslation(); // Hook para traducciones
+    
+    // Determine which CV to download based on language
+    const isSpanish = i18n.language?.startsWith('es');
+    const cvFile = isSpanish ? FILES.CV_ES : FILES.CV_EN;
 
     return (
         <section id={t("home.id")} className="relative border-b border-neutral-900 pb-12 pt-36 lg:pt-48">
@@ -85,11 +89,11 @@ export const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.5 }}
                     >
                         <a
-                            href={FILES.CV}
+                            href={cvFile}
                             download
                             className="px-6 py-2 text-sm font-medium text-gray-200 border border-gray-400 rounded-full hover:bg-gray-600 hover:brightness-125 hover:scale-105 transition-transform duration-300"
                         >
-                            Download CV
+                            {t("home.downloadCV")}
                         </a>
                     </motion.div>
                 </div>

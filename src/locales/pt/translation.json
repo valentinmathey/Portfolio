@@ -8,7 +8,8 @@
     "contact": "Contato"
   },
   "home": {
-    "id": "inicio"
+    "id": "inicio",
+    "downloadCV": "Baixar CV"
   },
   "about": {
     "id": "sobre-mim",
